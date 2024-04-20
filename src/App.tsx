@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { Route, Routes } from "react-router-dom";
+// import { Header } from "./components/Header";
+// import Landing from "./pages/Landing";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+// import Employment from "./pages/Employment";
+// import CarpetCleaning from "./pages/Services-Pages/Carpet-Cleaning";
+// import CommericalCleaning from "./pages/Services-Pages/Commercial-Cleaning";
+// import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
+// import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
+// import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <Routes>
+        <Route path="/MCC-Rebuild/" element={<Header />}>
+          <Route index element={<Landing />} />
+          <Route path="/MCC-Rebuild/about" element={<About />} />
+          <Route path="/MCC-Rebuild/contact" element={<Contact />} />
+          <Route path="/MCC-Rebuild/employment" element={<Employment />} />
+          <Route
+            path="/MCC-Rebuild/Commercial-Cleaning"
+            element={<CommericalCleaning />}
+          />
+          <Route
+            path="/MCC-Rebuild/Carpet-Cleaning"
+            element={<CarpetCleaning />}
+          />
+          <Route
+            path="/MCC-Rebuild/Janitorial-Services"
+            element={<JanitorialServices />}
+          />
+          <Route
+            path="/MCC-Rebuild/Office-Cleaning"
+            element={<OfficeCleaning />}
+          />
+        </Route>
+      </Routes>
+      <Footer /> */}
+      hello
     </>
-  )
+  );
 }
-
-export default App
