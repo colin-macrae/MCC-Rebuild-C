@@ -1,5 +1,5 @@
-// import { Route, Routes } from "react-router-dom";
-// import { Header } from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import { Header } from "./components/Header";
 // import Landing from "./pages/Landing";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
@@ -13,9 +13,9 @@
 export default function App() {
   return (
     <>
-      {/* <Routes>
-        <Route path="/MCC-Rebuild/" element={<Header />}>
-          <Route index element={<Landing />} />
+      <Routes>
+        <Route path="/" element={<Header />}>
+          {/* <Route index element={<Landing />} />
           <Route path="/MCC-Rebuild/about" element={<About />} />
           <Route path="/MCC-Rebuild/contact" element={<Contact />} />
           <Route path="/MCC-Rebuild/employment" element={<Employment />} />
@@ -34,11 +34,10 @@ export default function App() {
           <Route
             path="/MCC-Rebuild/Office-Cleaning"
             element={<OfficeCleaning />}
-          />
+          /> */}
         </Route>
       </Routes>
-      <Footer /> */}
-      hello
+      {/* <Footer /> */}
     </>
   );
 }
