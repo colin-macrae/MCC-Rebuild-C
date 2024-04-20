@@ -1,4 +1,4 @@
-// import "../pages/Landing.css";
+import "../pages/Landing.css";
 import { FaLinkedin } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import coloredLogo from "../assets/Mass_Commercial_Cleaning_FINAL-1cREV-SCREEN.svg";
