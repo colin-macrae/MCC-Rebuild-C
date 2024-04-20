@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export function Header() {
   const [sliderOpen, setSliderOpen] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <>
