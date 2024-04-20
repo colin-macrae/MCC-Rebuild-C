@@ -44,7 +44,7 @@ export function Header() {
           <i className="fa-solid fa-bars"></i>
         </button>
         {sliderOpen === true ? (
-          <SliderMenu setSliderOpen={setSliderOpen} />
+          // <SliderMenu setSliderOpen={setSliderOpen} />
         ) : null}
       </div>
       <Outlet />
@@ -113,99 +113,99 @@ export function NavLinks() {
   );
 }
 
-export function SliderMenu({ setSliderOpen }) {
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const navigate = useNavigate();
+// export function SliderMenu({ setSliderOpen }) {
+//   const [servicesOpen, setServicesOpen] = useState(false);
+//   const navigate = useNavigate();
 
-  const toggleServices = () => {
-    setServicesOpen(!servicesOpen);
-  };
+//   const toggleServices = () => {
+//     setServicesOpen(!servicesOpen);
+//   };
 
-  const closeSliderAndNavigate = (path) => {
-    setServicesOpen(false);
-    setSliderOpen(false);
-    navigate(path);
-  };
+//   const closeSliderAndNavigate = (path) => {
+//     setServicesOpen(false);
+//     setSliderOpen(false);
+//     navigate(path);
+//   };
 
-  return (
-    <div className="slider-menu">
-      <button onClick={() => setSliderOpen(false)}>
-        <i className="fa-solid fa-xmark"></i>
-      </button>
-      <div className="navbar flex justify-center pb-4">
-        <div className="HEAD-CENTER mobile-nav-links flex text-white font-bold">
-          <Link
-            onClick={() => setSliderOpen(false)}
-            className="nav-item"
-            to="/MCC-Rebuild/"
-          >
-            <div>HOME</div>
-          </Link>
-          <Link
-            onClick={() => setSliderOpen(false)}
-            className="nav-item"
-            to="/MCC-Rebuild/about"
-          >
-            <div>ABOUT</div>
-          </Link>
-          <Link
-            onClick={() => setSliderOpen(false)}
-            className="nav-item"
-            to="/MCC-Rebuild/employment"
-          >
-            <div>EMPLOYMENT</div>
-          </Link>
-          <div className="SERVICES relative nav-item">
-            <div onClick={toggleServices} className="services w-[7rem]">
-              SERVICES &#9660;
-              {servicesOpen && (
-                <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
-                  <button
-                    className="text-m pt-2 px-2 text-left"
-                    onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Commercial-Cleaning")
-                    }
-                  >
-                    Commercial Cleaning
-                  </button>
-                  <button
-                    className="text-m pt-2 px-2 text-left"
-                    onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Janitorial-Services")
-                    }
-                  >
-                    Janitorial Services
-                  </button>
-                  <button
-                    className="text-m pt-2 px-2 text-left"
-                    onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Carpet-Cleaning")
-                    }
-                  >
-                    Commercial Carpet Cleaning
-                  </button>
-                  <button
-                    className="text-m pt-2 px-2 pb-2 text-left"
-                    onClick={() =>
-                      closeSliderAndNavigate("/MCC-Rebuild/Office-Cleaning")
-                    }
-                  >
-                    Office Cleaning
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
+//   return (
+//     <div className="slider-menu">
+//       <button onClick={() => setSliderOpen(false)}>
+//         <i className="fa-solid fa-xmark"></i>
+//       </button>
+//       <div className="navbar flex justify-center pb-4">
+//         <div className="HEAD-CENTER mobile-nav-links flex text-white font-bold">
+//           <Link
+//             onClick={() => setSliderOpen(false)}
+//             className="nav-item"
+//             to="/MCC-Rebuild/"
+//           >
+//             <div>HOME</div>
+//           </Link>
+//           <Link
+//             onClick={() => setSliderOpen(false)}
+//             className="nav-item"
+//             to="/MCC-Rebuild/about"
+//           >
+//             <div>ABOUT</div>
+//           </Link>
+//           <Link
+//             onClick={() => setSliderOpen(false)}
+//             className="nav-item"
+//             to="/MCC-Rebuild/employment"
+//           >
+//             <div>EMPLOYMENT</div>
+//           </Link>
+//           <div className="SERVICES relative nav-item">
+//             <div onClick={toggleServices} className="services w-[7rem]">
+//               SERVICES &#9660;
+//               {servicesOpen && (
+//                 <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
+//                   <button
+//                     className="text-m pt-2 px-2 text-left"
+//                     onClick={() =>
+//                       closeSliderAndNavigate("/MCC-Rebuild/Commercial-Cleaning")
+//                     }
+//                   >
+//                     Commercial Cleaning
+//                   </button>
+//                   <button
+//                     className="text-m pt-2 px-2 text-left"
+//                     onClick={() =>
+//                       closeSliderAndNavigate("/MCC-Rebuild/Janitorial-Services")
+//                     }
+//                   >
+//                     Janitorial Services
+//                   </button>
+//                   <button
+//                     className="text-m pt-2 px-2 text-left"
+//                     onClick={() =>
+//                       closeSliderAndNavigate("/MCC-Rebuild/Carpet-Cleaning")
+//                     }
+//                   >
+//                     Commercial Carpet Cleaning
+//                   </button>
+//                   <button
+//                     className="text-m pt-2 px-2 pb-2 text-left"
+//                     onClick={() =>
+//                       closeSliderAndNavigate("/MCC-Rebuild/Office-Cleaning")
+//                     }
+//                   >
+//                     Office Cleaning
+//                   </button>
+//                 </div>
+//               )}
+//             </div>
+//           </div>
 
-          <Link
-            onClick={() => setSliderOpen(false)}
-            className="nav-item"
-            to="/MCC-Rebuild/contact"
-          >
-            <div>CONTACT</div>
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
+//           <Link
+//             onClick={() => setSliderOpen(false)}
+//             className="nav-item"
+//             to="/MCC-Rebuild/contact"
+//           >
+//             <div>CONTACT</div>
+//           </Link>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
