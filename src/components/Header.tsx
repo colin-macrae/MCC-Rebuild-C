@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export function Header() {
   const [sliderOpen, setSliderOpen] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -43,9 +43,9 @@ export function Header() {
         <button onClick={() => setSliderOpen(!sliderOpen)}>
           <i className="fa-solid fa-bars"></i>
         </button>
-        {sliderOpen === true ? (
-          // <SliderMenu setSliderOpen={setSliderOpen} />
-        ) : null}
+        {/* {sliderOpen === true ? (
+          <SliderMenu setSliderOpen={setSliderOpen} />
+        ) : null} */}
       </div>
       <Outlet />
     </>
