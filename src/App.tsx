@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import Landing from "./pages/Landing";
-// import About from "./pages/About";
+import About from "./pages/About";
 // import Contact from "./pages/Contact";
-// import Employment from "./pages/Employment";
+import Employment from "./pages/Employment";
 // import CarpetCleaning from "./pages/Services-Pages/Carpet-Cleaning";
 // import CommericalCleaning from "./pages/Services-Pages/Commercial-Cleaning";
 // import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
@@ -16,10 +16,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Landing />} />
-          {/* <Route path="/MCC-Rebuild/about" element={<About />} />
-          <Route path="/MCC-Rebuild/contact" element={<Contact />} />
-          <Route path="/MCC-Rebuild/employment" element={<Employment />} />
-          <Route
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/MCC-Rebuild/contact" element={<Contact />} /> */}
+          <Route path="/employment" element={<Employment />} />
+          {/* <Route
             path="/MCC-Rebuild/Commercial-Cleaning"
             element={<CommericalCleaning />}
           />
