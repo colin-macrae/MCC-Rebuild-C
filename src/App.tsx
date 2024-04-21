@@ -2,13 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
-// import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";
 import Employment from "./pages/Employment";
-// import CarpetCleaning from "./pages/Services-Pages/Carpet-Cleaning";
-// import CommericalCleaning from "./pages/Services-Pages/Commercial-Cleaning";
-// import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
-// import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
-// import Footer from "./components/Footer";
+import CarpetCleaning from "./pages/Services-Pages/Carpet-Cleaning";
+import CommericalCleaning from "./pages/Services-Pages/Commercial-Cleaning";
+import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
+import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -17,27 +17,27 @@ export default function App() {
         <Route path="/" element={<Header />}>
           <Route index element={<Landing />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/MCC-Rebuild/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
           <Route path="/employment" element={<Employment />} />
-          {/* <Route
-            path="/MCC-Rebuild/Commercial-Cleaning"
+          <Route
+            path="/Commercial-Cleaning"
             element={<CommericalCleaning />}
           />
           <Route
-            path="/MCC-Rebuild/Carpet-Cleaning"
+            path="/Carpet-Cleaning"
             element={<CarpetCleaning />}
           />
           <Route
-            path="/MCC-Rebuild/Janitorial-Services"
+            path="/Janitorial-Services"
             element={<JanitorialServices />}
           />
           <Route
-            path="/MCC-Rebuild/Office-Cleaning"
+            path="/Office-Cleaning"
             element={<OfficeCleaning />}
-          /> */}
+          />
         </Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
