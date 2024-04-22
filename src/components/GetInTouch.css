@@ -15,14 +15,14 @@
   padding: 60px 240px;
 }
 
-h2 {
+.get-in-touch-heading {
   color: rgb(0, 80, 103);
   font-weight: 600;
   font-size: 3rem;
   margin-bottom: 10px;
 }
 
-p {
+.get-in-touch-text {
   font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
   margin-bottom: 40px;
 }
@@ -51,7 +51,7 @@ p {
 }
 
 @media only screen and (max-width: 980px) {
-  h2 {
+  .get-in-touch-heading {
     font-size: 2.2rem;
   }
 
@@ -61,7 +61,7 @@ p {
 }
 
 @media only screen and (max-width: 765px) {
-  h2 {
+  .get-in-touch-heading {
     font-size: 1.8rem;
   }
 
