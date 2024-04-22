@@ -2,7 +2,7 @@ import "./GetInTouch.css";
 
 export default function GetInTouch() {
   return (
-    <section className="get-in-touch-section">
+    <section className="get-in-touch-section get-in-touch-bg">
       <div className="get-in-touch-content">
         <h2 className="get-in-touch-heading">Get In Touch</h2>
         <p className="get-in-touch-text">
