@@ -10,7 +10,7 @@ export default function Footer() {
           <img className="" src={coloredLogo}></img>
         </div>
 
-        <div className="lg:w-1/4 flex-col w-full pl-12">
+        <div className="lg:w-1/4 flex-col w-full pl-14">
           <div className="text-sm font-bold mb-4 flex justify-center mt-4 lg:mt-auto lg:justify-start">
             CONTACT US
           </div>
