@@ -7,10 +7,10 @@ export default function Footer() {
     <footer className="w-full">
       <div className="p-5 pt-10 px-12 bg-[#005067] text-[#ffffff] w-full flex flex-col justify-center lg:flex-row ">
         <div className="lg:w-52 w-full flex justify-center lg:block">
-          <img className="" src={coloredLogo}></img>
+          <img src={coloredLogo}></img>
         </div>
 
-        <div className="lg:w-1/4 flex-col w-full pl-14">
+        <div className="lg:w-1/4 flex-col w-full lg:pl-14">
           <div className="text-sm font-bold mb-4 flex justify-center mt-4 lg:mt-auto lg:justify-start">
             CONTACT US
           </div>
