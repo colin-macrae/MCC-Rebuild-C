@@ -7,10 +7,10 @@ export default function Footer() {
     <footer className="w-full">
       <div className="p-5 pt-10 px-12 bg-[#005067] text-[#ffffff] w-full flex flex-col justify-center lg:flex-row ">
         <div className="lg:w-52 w-full flex justify-center lg:block">
-          <img src={coloredLogo}></img>
+          <img src={coloredLogo} />
         </div>
 
-        <div className="lg:w-1/4 flex-col w-full lg:pl-14">
+        <div className="lg:w-1/4 flex-col w-full mt-6 lg:mt-auto lg:pl-14">
           <div className="text-sm font-bold mb-4 flex justify-center mt-4 lg:mt-auto lg:justify-start">
             CONTACT US
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
 
         <div className="lg:w-1/5 flex-col w-full ">
-          <div className="text-sm flex justify-center  mt-4 lg:mt-auto pb-3 lg:justify-start font-bold">
+          <div className="text-sm flex justify-center  mt-6 lg:mt-auto pb-3 lg:justify-start font-bold">
             HOURS
           </div>
           <div>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="lg:w-1/5 flex-col w-full">
-          <div className="mt-4 lg:mt-auto">
+          <div className="mt-8 lg:mt-auto">
             <Link to="/">
               <p className="flex justify-center lg:justify-start text-sm font-bold pb-2 hover:text-[#F48700]">
                 HOME
@@ -72,8 +72,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-
-        {/* <div className="lo:w-1/5 flex-col">PRIVACY POLICY</div> */}
       </div>
     </footer>
   );
