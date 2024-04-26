@@ -1,6 +1,6 @@
 import GetInTouch from "../components/GetInTouch";
 import "./Landing.css";
-import "./About.css"
+import "./About.css";
 
 export default function Landing() {
   return (
@@ -17,6 +17,35 @@ export default function Landing() {
           <button className="btn">CONTACT US &rsaquo;</button>
         </div>
       </section>
+      <section className="attribute-icons-section">
+        <div className="content-container">
+          <div className="icon-container">
+            <img
+              src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-48@2x.jpg"
+              alt=""
+              className="three-icons"
+            />
+            <h3 className="icons-text">Affordable & Consistent</h3>
+          </div>
+          <div className="icon-container">
+            <img
+              src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-46@2x.jpg"
+              alt=""
+              className="three-icons"
+            />
+            <h3 className="icons-text">Employee-Owned</h3>
+          </div>
+          <div className="icon-container">
+            <img
+              src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-44@2x.jpg"
+              alt=""
+              className="three-icons"
+            />
+            <h3 className="icons-text">Management Oversight</h3>
+          </div>
+        </div>
+      </section>
+
       <GetInTouch />
     </div>
   );
