@@ -73,12 +73,12 @@ export default function Landing() {
       </section>
       <section className="image-carousel-section">
         <div className="carousel-sctn-content-container">
-          <div className="slider">
-            <div className="slide-container">
+          <div className="slider slider-margin">
+            <div className="slide-container slide-container-landing">
               <img
                 src={images[currentImageIndex]}
                 alt={`Slide ${currentImageIndex + 1}`}
-                className="slide"
+                className="slide slide-landing"
               />
               <button className="prev" onClick={prevSlide}>
                 &#10094;
@@ -102,7 +102,7 @@ export default function Landing() {
                 />
               ))}
             </div>
-            <button className="btn">ABOUT MCC &nbsp; &rsaquo;</button>
+            <button className="btn btn-landing">ABOUT MCC &nbsp; &rsaquo;</button>
           </div>
           <div>
             <div className="list-container">

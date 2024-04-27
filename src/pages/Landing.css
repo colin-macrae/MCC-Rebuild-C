@@ -6,9 +6,9 @@
   font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
 }
 
-/* ***********************************************
------MOBILE STYLING: ATTRIBUTE-ICONS SECTION -----
-*********************************************** */
+/* *******************************
+-----ATTRIBUTE-ICONS SECTION -----
+******************************** */
 .attribute-icons-section {
   background-color: white;
   margin: auto;
@@ -79,19 +79,19 @@
   padding: 40px 0;
 }
 
-.slider {
+.slider-margin {
   width: 450px;
   margin-right: 12rem;
 }
 
-.slide-container {
+.slide-container-landing {
   max-height: 350px;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.slide {
+.slide-landing {
   width: auto;
   max-height: 350px;
 }
@@ -105,14 +105,15 @@
   width: auto !important;
 }
 
-.btn {
+.btn-landing {
   background-color: rgb(0, 80, 103) !important;
   padding: 15px 80px !important;
 }
 
-.btn:hover {
+.btn-landing:hover {
   background-color: rgb(245, 136, 0) !important;
 }
+
 
 .bullet-list-heading {
   color: rgb(245, 136, 0);
@@ -160,20 +161,24 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .slide-container {
-    height: 750px;
+  .slide-container-landing {
+    height: 220px !important;
   }
 
-  .slide {
+  .slider {
+    width:auto;
+  }
+
+  .slide-landing {
     width: auto;
-    max-height: 180px;
+    max-height: 240px;
   }
 
   .preview-img {
-    height: 80px !important;
+    height: 60px !important;
   }
 
   .preview-container {
-    flex-wrap: wrap !important;
+    margin-bottom: 10px;
   }
 }
