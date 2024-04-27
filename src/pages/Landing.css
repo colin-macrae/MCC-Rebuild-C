@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+}
 
 /* ***********************************************
 -----MOBILE STYLING: ATTRIBUTE-ICONS SECTION -----
@@ -56,5 +59,121 @@
 @media only screen and (max-width: 770px) {
   .icons-text {
     font-size: 1.3rem;
+  }
+}
+
+/* ******************************
+-----IMAGE CAROUSEL SECTION -----
+****************************** */
+.image-carousel-section {
+  background-image: url("../assets/Carousel-Bg.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-sctn-content-container {
+  max-width: 1300px;
+  display: flex;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.slider {
+  width: 450px;
+  margin-right: 12rem;
+}
+
+.slide-container {
+  max-height: 350px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.slide {
+  width: auto;
+  max-height: 350px;
+}
+
+.preview-container {
+  margin-bottom: 40px;
+}
+
+.preview-img {
+  height: 100px !important;
+  width: auto !important;
+}
+
+.btn {
+  background-color: rgb(0, 80, 103) !important;
+  padding: 15px 80px !important;
+}
+
+.btn:hover {
+  background-color: rgb(245, 136, 0) !important;
+}
+
+.bullet-list-heading {
+  color: rgb(245, 136, 0);
+  font-size: 1.35rem;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+.bullet-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+/* **************************************
+-----IMAGE CAROUSEL SECTION: MOBILE.----
+************************************** */
+@media only screen and (max-width: 1400px) {
+  .carousel-sctn-content-container {
+    display: block;
+    margin: auto !important;
+  }
+
+  .image-carousel-section {
+    display: block !important;
+    margin: auto !important;
+  }
+
+  .slider {
+    margin: 0 auto 50px auto !important;
+  }
+
+  .list-container {
+    margin: auto !important;
+    max-width: 800px;
+    padding-left: 60px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .list-container {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-container {
+    height: 750px;
+  }
+
+  .slide {
+    width: auto;
+    max-height: 180px;
+  }
+
+  .preview-img {
+    height: 80px !important;
+  }
+
+  .preview-container {
+    flex-wrap: wrap !important;
   }
 }
