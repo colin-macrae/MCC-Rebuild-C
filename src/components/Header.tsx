@@ -73,7 +73,7 @@ export function NavLinks() {
           className="SERVICES relative nav-item"
         >
           <div className="services w-[5.625rem]">
-            SERVICES &#9660;
+            SERVICES&#9660;
             {servicesOnHover && (
               <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
                 <button

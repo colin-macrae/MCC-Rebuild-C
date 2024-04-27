@@ -10,7 +10,7 @@ export default function GetInTouch() {
           MCC is the one to call. Let’s get started on ensuring your cleaning
           needs are being met.
         </p>
-        <button className="btn">CONTACT US &rsaquo;</button>
+        <button className="btn">CONTACT US &nbsp; &rsaquo;</button>
       </div>
     </section>
   );
