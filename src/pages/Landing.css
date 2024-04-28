@@ -114,7 +114,6 @@
   background-color: rgb(245, 136, 0) !important;
 }
 
-
 .bullet-list-heading {
   color: rgb(245, 136, 0);
   font-size: 1.35rem;
@@ -166,7 +165,7 @@
   }
 
   .slider {
-    width:auto;
+    width: auto;
   }
 
   .slide-landing {
@@ -188,6 +187,7 @@
 ****************************** */
 .mcc-advantage-section {
   background-color: white;
+  padding-bottom: 2rem;
 }
 
 .mcc-advantage-first-section {
@@ -209,7 +209,6 @@
 .mcc-advantage-heading-text {
   line-height: 2;
 }
-  
 
 .advantages-row {
   display: flex;
@@ -222,7 +221,7 @@
 
 .advantage-single {
   width: 42%;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .advantages-img {
@@ -238,8 +237,32 @@
 }
 
 .advantage-description {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   line-height: 2;
-  /* padding: 0 20px; */
 }
 
+/* ********************************************
+-----MOBILE STYLING: MCC ADVANTAGE SECTION.----
+******************************************** */
+@media only screen and (max-width: 980px) {
+  .mcc-advantage-section {
+    padding-bottom: 4rem;
+  }
+
+  .advantages-row {
+    display: block;
+  }
+
+  .advantage-single {
+    margin: auto;
+    width: 550px;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .advantage-single {
+    margin: auto;
+    width: 87%;
+  }
+}
