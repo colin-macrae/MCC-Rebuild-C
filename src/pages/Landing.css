@@ -182,3 +182,64 @@
     margin-bottom: 10px;
   }
 }
+
+/* ******************************
+-----MCC ADVANTAGE SECTION.----
+****************************** */
+.mcc-advantage-section {
+  background-color: white;
+}
+
+.mcc-advantage-first-section {
+  text-align: center;
+  margin: auto;
+  max-width: 1400px;
+  background-color: rgba(255, 255, 255, 0.897);
+  padding: 60px 5%;
+  margin-bottom: 20px;
+}
+
+.mcc-advantage-subtitle {
+  color: rgb(0, 80, 103);
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.mcc-advantage-heading-text {
+  line-height: 2;
+}
+  
+
+.advantages-row {
+  display: flex;
+  max-width: 1400px;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  padding: 0 3%;
+}
+
+.advantage-single {
+  width: 42%;
+  margin-bottom: 4rem;
+}
+
+.advantages-img {
+  max-width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.advantage-name {
+  color: rgb(245, 136, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.advantage-description {
+  margin-bottom: 2rem;
+  line-height: 2;
+  /* padding: 0 20px; */
+}
+
