@@ -114,7 +114,6 @@
   background-color: rgb(245, 136, 0) !important;
 }
 
-
 .bullet-list-heading {
   color: rgb(245, 136, 0);
   font-size: 1.35rem;
@@ -166,7 +165,7 @@
   }
 
   .slider {
-    width:auto;
+    width: auto;
   }
 
   .slide-landing {
@@ -180,5 +179,111 @@
 
   .preview-container {
     margin-bottom: 10px;
+  }
+}
+
+/* ******************************
+-----MCC ADVANTAGE SECTION.----
+****************************** */
+.mcc-advantage-section {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.mcc-advantage-first-section {
+  text-align: center;
+  margin: auto;
+  max-width: 1400px;
+  background-color: rgba(255, 255, 255, 0.897);
+  padding: 60px 5%;
+  margin-bottom: 20px;
+}
+
+.mcc-advantage-subtitle {
+  color: rgb(0, 80, 103);
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.mcc-advantage-heading-text {
+  line-height: 2;
+}
+
+.advantages-row {
+  display: flex;
+  max-width: 1400px;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  padding: 0 3%;
+}
+
+.advantage-single {
+  width: 42%;
+  padding-bottom: 4rem;
+}
+
+.advantages-img {
+  max-width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.advantage-name {
+  color: rgb(245, 136, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.advantage-description {
+  padding-bottom: 2rem;
+  line-height: 2;
+}
+
+/* ********************************************
+-----MOBILE STYLING: MCC ADVANTAGE SECTION.----
+******************************************** */
+@media only screen and (max-width: 980px) {
+  .mcc-advantage-first-section {
+    margin-bottom: 4rem;
+    padding-bottom: 0;
+    max-width: 90%;
+  }
+
+  .mcc-advantage-section {
+    padding-bottom: 4rem;
+  }
+
+  .mcc-advantage-subtitle {
+    line-height: 1;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  .advantages-row {
+    display: block;
+  }
+
+  .advantage-single {
+    margin: auto;
+    width: 550px;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .advantage-single {
+    margin: auto;
+    width: 87%;
+  }
+
+  .mcc-advantage-subtitle {
+    font-size: 1.7rem;
+  }
+
+  .advantage-name {
+    font-size: 1.2rem;
   }
 }
