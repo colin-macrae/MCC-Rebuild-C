@@ -221,6 +221,25 @@ export default function Landing() {
           </div>
         </div>
       </section>
+      <section className="testimonial-section testimonial-bg">
+        <div className="testimonial-content">
+          {/* <h2 className="get-in-touch-heading">Get In Touch</h2> */}
+          <p className="testimonial-text">
+            I am a Supervisor of Equipment and Facilities for a global medical
+            device manufacturer, Karl Storz. Being in business with MCC makes my
+            work life less stressful and gives our employees a spotless and
+            sanitary facility that we are quite proud of. Mass Commercial
+            Cleaning is responsive, reliable, and thorough. With the labor
+            market as tight as it is having Bill Hickman and MCC on the team
+            allows Advanced Machining the ability to grow the business by
+            allowing us to put more time and focus into equipment reliability
+            and building systems. #highlyrecommended #teamwork
+          </p>
+          <p className="testimonial-text">  - Chris
+          </p>
+          {/* <button className="btn">CONTACT US &nbsp; &rsaquo;</button> */}
+        </div>
+      </section>
 
       <GetInTouch />
     </div>
