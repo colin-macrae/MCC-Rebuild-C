@@ -223,7 +223,6 @@ export default function Landing() {
       </section>
       <section className="testimonial-section testimonial-bg">
         <div className="testimonial-content">
-          {/* <h2 className="get-in-touch-heading">Get In Touch</h2> */}
           <p className="testimonial-text">
             I am a Supervisor of Equipment and Facilities for a global medical
             device manufacturer, Karl Storz. Being in business with MCC makes my
@@ -237,7 +236,6 @@ export default function Landing() {
           </p>
           <p className="testimonial-text">  - Chris
           </p>
-          {/* <button className="btn">CONTACT US &nbsp; &rsaquo;</button> */}
         </div>
       </section>
 
