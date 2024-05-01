@@ -13,7 +13,6 @@ export default function Contact(): JSX.Element {
             England area. Contact us today to get a quote on your services and discover
             what makes Mass Commercial Cleaning a trusted janitorial partner.
           </p>
-          <button className="btn">CONTACT US &rsaquo;</button>
         </div>
       </section>
       <div className="w-full">

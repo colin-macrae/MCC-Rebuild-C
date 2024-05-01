@@ -1,5 +1,5 @@
 import "./GetInTouch.css";
-
+import { Link } from "react-router-dom";
 export default function GetInTouch() {
   return (
     <section className="get-in-touch-section get-in-touch-bg">
@@ -10,7 +10,10 @@ export default function GetInTouch() {
           MCC is the one to call. Let’s get started on ensuring your cleaning
           needs are being met.
         </p>
-        <button className="btn">CONTACT US &nbsp; &rsaquo;</button>
+        <Link to="/contact">
+          <button className="btn">CONTACT US &nbsp; &rsaquo;</button>
+        </Link>
+        
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "../assets/111-Thatcher-Day-1-roback-11.jpg";
 import "../assets/111-Thatcher-Day-1-roback-3.jpg";
 import GetInTouch from "../components/GetInTouch.tsx";
+import { Link } from "react-router-dom";
 
 const images = [
   "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0028.jpg",
@@ -13,6 +14,7 @@ const images = [
 
 export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -41,7 +43,9 @@ export default function About() {
             Massachusetts is that we are employee-owned. When you do business
             with us, you are directly supporting our cleaners and community.
           </p>
-          <button className="btn">CONTACT US &rsaquo;</button>
+          <Link to="/contact">
+            <button className="btn">CONTACT US &rsaquo;</button>
+          </Link>
         </div>
       </section>
       <section className="about-caring-section">
@@ -54,7 +58,12 @@ export default function About() {
             quote to each clean you have with us, every interaction is with an
             owner of the company.
           </p>
-          <button className="btn">CALL FOR A QUOTE &rsaquo;</button>
+          <button
+            className="btn"
+            onClick={() => setShowPhoneNumber(!showPhoneNumber)}
+          >
+            {showPhoneNumber ? "CALL US NOW" : "(413) 568-4696"}
+          </button>
         </div>
 
         <div className="slider">
@@ -128,10 +137,9 @@ export default function About() {
               className="team-pic-double"
             />
           </div>
-            
-          </div>
+        </div>
       </section>
-      
+
       <GetInTouch />
     </div>
   );
