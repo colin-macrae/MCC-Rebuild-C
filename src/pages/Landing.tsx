@@ -2,6 +2,7 @@ import GetInTouch from "../components/GetInTouch";
 import "./Landing.css";
 import "./About.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -40,7 +41,9 @@ export default function Landing() {
             Connecticut. Leading the way for reliable cleaning services, we’re
             the corporate cleaning company in the New England area.
           </p>
-          <button className="btn">CONTACT US &rsaquo;</button>
+          <Link to="/contact">
+            <button className="btn">CONTACT US &rsaquo;</button>
+          </Link>
         </div>
       </section>
       <section className="attribute-icons-section">
@@ -102,9 +105,11 @@ export default function Landing() {
                 />
               ))}
             </div>
-            <button className="btn btn-landing">
-              ABOUT MCC &nbsp; &rsaquo;
-            </button>
+            <Link to="/about">
+              <button className="btn btn-landing">
+                ABOUT MCC &nbsp; &rsaquo;
+              </button>
+            </Link>
           </div>
           <div>
             <div className="list-container">
@@ -234,8 +239,7 @@ export default function Landing() {
             allowing us to put more time and focus into equipment reliability
             and building systems. #highlyrecommended #teamwork
           </p>
-          <p className="testimonial-text">  - Chris
-          </p>
+          <p className="testimonial-text"> - Chris</p>
         </div>
       </section>
 

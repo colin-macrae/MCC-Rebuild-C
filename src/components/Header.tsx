@@ -26,12 +26,15 @@ export function Header() {
             </a>
           </div>
           <div className="HEAD-RIGHT flex items-center mb-10 text-white font-bold">
-            <button className="flex leading-5">
-              <span className="pr-1.5">
-                <HiOutlineMail size={20} />
-              </span>{" "}
-              EMAIL US
-            </button>
+            <Link to="/contact">
+              <button className="flex leading-5">
+                <span className="pr-1.5">
+                  <HiOutlineMail size={20} />
+                </span>{" "}
+                EMAIL US
+              </button>
+            </Link>
+
             <button
               className="call-us-btn text-white text-center w-48 h-10 px-4 self-center bg-[#F58800] rounded font-bold mx-5"
               onClick={() => setShowPhoneNumber(!showPhoneNumber)}
@@ -183,17 +186,13 @@ export function SliderMenu({ setSliderOpen }: any) {
                   </button>
                   <button
                     className="text-m pt-2 px-2 text-left"
-                    onClick={() =>
-                      closeSliderAndNavigate("/Carpet-Cleaning")
-                    }
+                    onClick={() => closeSliderAndNavigate("/Carpet-Cleaning")}
                   >
                     Commercial Carpet Cleaning
                   </button>
                   <button
                     className="text-m pt-2 px-2 pb-2 text-left"
-                    onClick={() =>
-                      closeSliderAndNavigate("/Office-Cleaning")
-                    }
+                    onClick={() => closeSliderAndNavigate("/Office-Cleaning")}
                   >
                     Office Cleaning
                   </button>

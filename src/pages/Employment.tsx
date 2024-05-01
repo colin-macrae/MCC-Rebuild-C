@@ -1,5 +1,6 @@
 import "./Employment.css";
 import EmploymentForm from "./EmploymentForm";
+import { Link } from "react-router-dom";
 
 export default function Employment() {
   return (
@@ -12,13 +13,15 @@ export default function Employment() {
             Massachusetts is that we are employee-owned. When you do business
             with us, you are directly supporting our cleaners and community.
           </p>
-          <button className="btn">CONTACT US &rsaquo;</button>
+          <Link to="/contact">
+            <button className="btn">CONTACT US &rsaquo;</button>
+          </Link>
+          
         </div>
       </section>
       <section className="form-container">
         <EmploymentForm />
       </section>
-      
     </div>
   );
 };
