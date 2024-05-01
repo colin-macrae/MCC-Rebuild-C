@@ -8,6 +8,8 @@ import { useState } from "react";
 
 export function Header() {
   const [sliderOpen, setSliderOpen] = useState(false);
+  const [showPhoneNumber, setShowPhoneNumber] = useState(false);
+
   const navigate = useNavigate();
 
   return (
@@ -30,8 +32,11 @@ export function Header() {
               </span>{" "}
               EMAIL US
             </button>
-            <button className="call-us-btn text-white text-center h-12 px-4 self-center bg-[#F58800] rounded font-bold mx-5">
-              CALL US NOW
+            <button
+              className="call-us-btn text-white text-center w-48 h-10 px-4 self-center bg-[#F58800] rounded font-bold mx-5"
+              onClick={() => setShowPhoneNumber(!showPhoneNumber)}
+            >
+              {showPhoneNumber ? "CALL US NOW" : "(413) 568-4696"}
             </button>
             <button className="flex text-white">
               <FaLinkedin size={40} />
