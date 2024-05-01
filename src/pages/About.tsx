@@ -62,7 +62,7 @@ export default function About() {
             className="btn"
             onClick={() => setShowPhoneNumber(!showPhoneNumber)}
           >
-            {showPhoneNumber ? "CALL US NOW" : "(413) 568-4696"}
+            {showPhoneNumber ? "(413) 568-4696" : "CALL US NOW"}
           </button>
         </div>
 
