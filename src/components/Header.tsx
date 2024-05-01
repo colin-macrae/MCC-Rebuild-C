@@ -39,7 +39,7 @@ export function Header() {
               className="call-us-btn text-white text-center w-48 h-10 px-4 self-center bg-[#F58800] rounded font-bold mx-5"
               onClick={() => setShowPhoneNumber(!showPhoneNumber)}
             >
-              {showPhoneNumber ? "CALL US NOW" : "(413) 568-4696"}
+              {showPhoneNumber ? "(413) 568-4696" : "CALL US NOW"}
             </button>
             <button className="flex text-white">
               <FaLinkedin size={40} />
