@@ -15,8 +15,8 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
 
       const elementTop = ref.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
-
-      if (elementTop < windowHeight - 10) {
+      
+      if (elementTop < windowHeight - 0) { // smaller number = animation starts earlier/lower
         controls.start({ y: 0, opacity: 1 });
       }
     };
@@ -31,7 +31,7 @@ const Reveal: React.FC<RevealProps> = ({ children }) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ y: 150, opacity: 0 }}
+      initial={{ y: 50, opacity: 0 }} // y axis value: greater = animations travel farther distance from start to end 
       animate={controls}
       transition={{ duration: 0.3, delay: 0 }} 
     >
