@@ -1,0 +1,81 @@
+/* HEADING SECTION  */
+.heading-section {
+  position: relative;
+  background-color: rgba(241, 241, 241, 0.897);
+  height: 15rem;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-text {
+  padding: 10%;
+  line-height: 1.75;
+}
+
+.heading-text h2 {
+  color: rgb(0, 80, 103);
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/* SECTION TWO  */
+.intro {
+  background-color: white;
+  /* height: 400px; */
+}
+
+.intro-container {
+  display: flex;
+  width: 1400px;
+  margin: auto;
+  padding: 7rem 0;
+}
+
+.intro-image {
+  height: 250px;
+}
+
+.intro-copy-container {
+  padding: 0 2rem;
+}
+
+.intro-heading {
+  color: rgb(0, 80, 103);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  color: black;
+  line-height: 2;
+}
+
+/* SECTION THREE */
+.section-three {
+  background-color: rgb(0, 80, 103);
+  color: white;
+  display: flex;
+}
+
+.section-three-container {
+  width: 1400px;
+  margin: auto;
+  padding: 7rem 0;
+}
+
+.section-three-heading {  
+  color: rgb(245, 136, 0);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.section-three-text {
+  line-height: 2;
+}
