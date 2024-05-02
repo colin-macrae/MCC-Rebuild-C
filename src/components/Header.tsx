@@ -42,7 +42,12 @@ export function Header() {
               {showPhoneNumber ? "(413) 568-4696" : "CALL US NOW"}
             </button>
             <button className="flex text-white">
-              <FaLinkedin size={40} />
+              <Link
+                to="https://www.linkedin.com/company/mass-commercial-cleaning/"
+                target="_blank"
+              >
+                <FaLinkedin size={40} />
+              </Link>
             </button>
           </div>
         </div>
