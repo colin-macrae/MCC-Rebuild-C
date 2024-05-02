@@ -1,17 +1,30 @@
 import Reveal from "../../components/Utils/Reveal";
-// import { Link } from "react-router-dom";
 import GetInTouch from "../../components/GetInTouch";
 import "./ServicesPagesTemplate.css";
 
-export default function ServicesPagesTemplate({
-  pageHeading,
-  pageHeadingText,
-  image,
-  introHeading,
-  introText,
-  sectionTwoHeading,
-  sectionTwoText,
-}) {
+interface ServicesPagesTemplateProps {
+  pageHeading: string;
+  pageHeadingText: string;
+  image: string;
+  introHeading: string;
+  introText: string;
+  sectionTwoHeading: string;
+  sectionTwoText: string;
+}
+
+export default function ServicesPagesTemplate(
+  props: ServicesPagesTemplateProps
+) {
+  const {
+    pageHeading,
+    pageHeadingText,
+    image,
+    introHeading,
+    introText,
+    sectionTwoHeading,
+    sectionTwoText,
+  } = props;
+
   return (
     <div>
       <Reveal>
