@@ -42,7 +42,12 @@ export function Header() {
               {showPhoneNumber ? "(413) 568-4696" : "CALL US NOW"}
             </button>
             <button className="flex text-white">
-              <FaLinkedin size={40} />
+              <Link
+                to="https://www.linkedin.com/company/mass-commercial-cleaning/"
+                target="_blank"
+              >
+                <FaLinkedin size={40} />
+              </Link>
             </button>
           </div>
         </div>
@@ -81,7 +86,7 @@ export function NavLinks() {
           className="SERVICES relative nav-item"
         >
           <div className="services w-[5.625rem]">
-            SERVICES&#9660;
+            SERVICES&nbsp;&#9660;
             {servicesOnHover && (
               <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
                 <button
@@ -163,9 +168,9 @@ export function SliderMenu({ setSliderOpen }: any) {
           >
             <div>EMPLOYMENT</div>
           </Link>
-          <div className="SERVICES relative nav-item">
-            <div onClick={toggleServices} className="services w-[7rem]">
-              SERVICES &#9660;
+          <div className="SERVICES services-width relative nav-item">
+            <div onClick={toggleServices} className="services w-[7.8rem]">
+              SERVICES&nbsp;&#9660;
               {servicesOpen && (
                 <div className="DROP-DOWN absolute top-6 left-0 h-max bg-[#008cb3] flex flex-col w-60 rounded">
                   <button
