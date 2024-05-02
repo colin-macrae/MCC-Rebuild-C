@@ -14,29 +14,29 @@ export default function ServicesPagesTemplate({
 }) {
   return (
     <div>
-      <section className="heading-section">
-        <Reveal>
+      <Reveal>
+        <section className="heading-section">
           <div className="heading-text">
             <h2>{pageHeading}</h2>
             <p>{pageHeadingText}</p>
           </div>
-        </Reveal>
-      </section>
-      <section className="intro">
-        <div className="intro-container">
-          <img className="intro-image" src={image} alt="worker working" />
-          <div className="intro-copy-container">
-            <h2 className="intro-heading">{introHeading}</h2>
-            <p className="intro-text">{introText}</p>
+        </section>
+        <section className="intro">
+          <div className="intro-container">
+            <img className="intro-image" src={image} alt="worker working" />
+            <div className="intro-copy-container">
+              <h2 className="intro-heading">{introHeading}</h2>
+              <p className="intro-text">{introText}</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="section-three">
-        <div className="section-three-container">
-          <h2 className="section-three-heading">{sectionTwoHeading}</h2>
-          <p className="section-three-text">{sectionTwoText}</p>
-        </div>
-      </section>
+        </section>
+        <section className="section-three">
+          <div className="section-three-container">
+            <h2 className="section-three-heading">{sectionTwoHeading}</h2>
+            <p className="section-three-text">{sectionTwoText}</p>
+          </div>
+        </section>
+      </Reveal>
       <GetInTouch />
     </div>
   );
