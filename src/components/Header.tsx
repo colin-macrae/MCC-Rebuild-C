@@ -209,7 +209,11 @@ export function SliderMenu({ setSliderOpen }: any) {
             </div>
           </div>
 
-          <Link className="nav-item" to="/service-areas">
+          <Link
+            onClick={() => setSliderOpen(false)}
+            className="nav-item"
+            to="/service-areas"
+          >
             <div>SERVICE AREAS</div>
           </Link>
 

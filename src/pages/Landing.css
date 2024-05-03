@@ -194,7 +194,6 @@
   text-align: center;
   margin: auto;
   max-width: 1400px;
-  background-color: rgba(255, 255, 255, 0.897);
   padding: 60px 5%;
   margin-bottom: 20px;
 }
@@ -288,7 +287,6 @@
   }
 }
 
-
 /* *****************************
 -----TESTIMONIAL SECTION----
 ****************************** */
@@ -301,7 +299,7 @@
   align-items: center;
 }
 
-.testimonial-content {  
+.testimonial-content {
   margin: auto;
   max-width: 1400px;
   background-color: rgb(0, 80, 103);
@@ -329,3 +327,108 @@
   }
 }
 
+/* *******************************
+-----COST EFFECTIVE SECTION-------
+**********************************/
+.cost-effective-section {
+  background-color: white;
+  padding: 4rem 4rem;
+}
+
+.cost-effective-container {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+  border: solid rgb(245, 136, 0) 3px;
+}
+
+.cost-effective-heading {
+  color: rgb(0, 80, 103);
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cost-effective-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+  margin: 2rem auto 3rem auto;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.cost-effective-item {
+  width: 25%;
+}
+
+.check-icon {
+  margin: 1rem auto;
+  font-size: 5rem;
+  color: rgb(0, 80, 103);
+}
+
+.item-heading {
+  color: rgb(245, 136, 0);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.item-text {
+  line-height: 2;
+}
+
+/* *************************************************
+-----MOBILE STYLING: COST EFFECTIVE SECTION-------
+************************************************* */
+
+@media only screen and (max-width: 1200px) {
+  .item-heading {
+    color: rgb(245, 136, 0);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .cost-effective-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cost-effective-section {
+    background-color: white;
+    padding: 10%;
+  }
+
+  .cost-effective-container {
+    width: 100%;
+    margin: auto;
+    padding: 2rem 15%;
+  }
+
+  .cost-effective-heading {
+    margin: 2rem 1rem 4rem 1rem;
+    font-size: 2rem;
+  }
+  .cost-effective-items {
+    display: block;
+    margin: auto;
+    padding: 0;
+  }
+
+  .cost-effective-item {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .item-heading {
+    font-size: 1.4rem;
+  }
+}
