@@ -56,7 +56,7 @@
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1150px) {
    .HEAD-RIGHT {
     display: none !important;
   }
@@ -104,7 +104,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1150px) {
   .mobile-nav-links {
     display: none !important;
   }

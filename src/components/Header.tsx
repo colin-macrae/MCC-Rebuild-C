@@ -117,6 +117,9 @@ export function NavLinks() {
             )}
           </div>
         </div>
+        <Link className="nav-item" to="/service-areas">
+          <div>SERVICE AREAS</div>
+        </Link>
 
         <Link className="nav-item" to="/contact">
           <div>CONTACT</div>
@@ -205,6 +208,10 @@ export function SliderMenu({ setSliderOpen }: any) {
               )}
             </div>
           </div>
+
+          <Link className="nav-item" to="/service-areas">
+            <div>SERVICE AREAS</div>
+          </Link>
 
           <Link
             onClick={() => setSliderOpen(false)}
