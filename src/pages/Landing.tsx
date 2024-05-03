@@ -4,6 +4,8 @@ import "./About.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -256,6 +258,42 @@ export default function Landing() {
               and building systems. #highlyrecommended #teamwork
             </p>
             <p className="testimonial-text"> - Chris</p>
+          </div>
+        </Reveal>
+      </section>
+      <section className="cost-effective-section">
+        <Reveal>
+          <div className="cost-effective-container">
+            <div className="cost-effective-heading">
+              <h2>Cost Effective Cleaning</h2>
+            </div>
+            <div className="cost-effective-items">
+              <div className="cost-effective-item">
+                <IoIosCheckmarkCircleOutline className="check-icon" />
+                <h3 className="item-heading">Supplies & Equipment</h3>
+                <p className="item-text">
+                  We invest in the right equipment and supplies to ensure our
+                  cleaners have the tools to get the job done well.
+                </p>
+              </div>
+              <div className="cost-effective-item">
+                <IoIosCheckmarkCircleOutline className="check-icon" />
+                <h3 className="item-heading">Office, Industrial, School</h3>
+                <p className="item-text">
+                  No matter the environment, our trusted team is equipped with
+                  the right tools and knowledge to ensure a superior clean.
+                </p>
+              </div>
+              <div className="cost-effective-item">
+                <IoIosCheckmarkCircleOutline className="check-icon" />
+                <h3 className="item-heading">Professionalism</h3>
+                <p className="item-text">
+                  Our uniformed employee-owners care about the work they do and
+                  how they do it, remaining courteous and respectful with every
+                  client interaction.
+                </p>
+              </div>
+            </div>
           </div>
         </Reveal>
       </section>
