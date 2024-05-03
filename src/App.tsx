@@ -9,6 +9,7 @@ import CommericalCleaning from "./pages/Services-Pages/Commercial-Cleaning";
 import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
 import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
 import Footer from "./components/Footer";
+import ServiceAreas from "./pages/ServiceAreas";
 
 export default function App() {
   return (
@@ -19,22 +20,11 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/employment" element={<Employment />} />
-          <Route
-            path="/Commercial-Cleaning"
-            element={<CommericalCleaning />}
-          />
-          <Route
-            path="/Carpet-Cleaning"
-            element={<CarpetCleaning />}
-          />
-          <Route
-            path="/Janitorial-Services"
-            element={<JanitorialServices />}
-          />
-          <Route
-            path="/Office-Cleaning"
-            element={<OfficeCleaning />}
-          />
+          <Route path="/service-areas" element={<ServiceAreas />} />
+          <Route path="/Commercial-Cleaning" element={<CommericalCleaning />} />
+          <Route path="/Carpet-Cleaning" element={<CarpetCleaning />} />
+          <Route path="/Janitorial-Services" element={<JanitorialServices />} />
+          <Route path="/Office-Cleaning" element={<OfficeCleaning />} />
         </Route>
       </Routes>
       <Footer />
