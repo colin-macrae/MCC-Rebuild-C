@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
-
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -40,11 +39,10 @@ export default function Landing() {
           <div className="about-heading-text">
             <h2>Professional Commercial Cleaning</h2>
             <p>
-              Mass Commercial Cleaning is a technology-enabled janitorial
-              partner serving 170 facilities in over 50 cities across
-              Massachusetts and Connecticut. Leading the way for reliable
-              cleaning services, we’re the corporate cleaning company in the New
-              England area.
+              Mass Commercial Cleaning is a technology-enabled janitorial partner serving
+              170 facilities in over 50 cities across Massachusetts and Connecticut.
+              Leading the way for reliable cleaning services, we’re the corporate cleaning
+              company in the New England area.
             </p>
             <Link to="/contact">
               <button className="btn">CONTACT US &rsaquo;</button>
@@ -106,18 +104,14 @@ export default function Landing() {
                     src={image}
                     alt={`Preview ${index + 1}`}
                     className={
-                      index === currentImageIndex
-                        ? "active preview-img"
-                        : "preview-img"
+                      index === currentImageIndex ? "active preview-img" : "preview-img"
                     }
                     onClick={() => setCurrentImageIndex(index)}
                   />
                 ))}
               </div>
               <Link to="/about">
-                <button className="btn btn-landing">
-                  ABOUT MCC &nbsp; &rsaquo;
-                </button>
+                <button className="btn btn-landing">ABOUT MCC &nbsp; &rsaquo;</button>
               </Link>
             </div>
             <div>
@@ -125,13 +119,11 @@ export default function Landing() {
                 <h3 className="bullet-list-heading">Environmental Cleaning</h3>
                 <ul className="bullet-list">
                   <li>Utilize Environmentally Preferable Cleaning Products</li>
-                  <li>
-                    Equipment & Practices that Prevent Cross-Contamination
-                  </li>
+                  <li>Equipment & Practices that Prevent Cross-Contamination</li>
                   <li>Improve Indoor Air Quality</li>
                   <li>
-                    Ensure a Safe & Clean Work Environment for Employees,
-                    Clients, & Visitors
+                    Ensure a Safe & Clean Work Environment for Employees, Clients, &
+                    Visitors
                   </li>
                 </ul>
               </div>
@@ -149,13 +141,10 @@ export default function Landing() {
                 <h3 className="bullet-list-heading">Industry Certified</h3>
                 <ul className="bullet-list">
                   <li>
-                    Certified in Clean Room & IT Data Storage Room Federal
-                    Standards
+                    Certified in Clean Room & IT Data Storage Room Federal Standards
                   </li>
                   <li>Members of ISSA</li>
-                  <li>
-                    Utilize the Cleaning Industry Management Standard (CIMS)
-                  </li>
+                  <li>Utilize the Cleaning Industry Management Standard (CIMS)</li>
                   <li>FAC114-Compliant & Insured</li>
                 </ul>
               </div>
@@ -169,12 +158,11 @@ export default function Landing() {
             <h2 className="mcc-advantage-subtitle">The MCC Advantage</h2>
 
             <p className="mcc-advantage-heading-text">
-              Serving clients from small offices to large industrial
-              manufacturers and government contractors, MCC is a commercial
-              cleaning contractor with trained and managed cleaners offering a
-              higher level of affordability, consistency, and reliable service
-              than any other cleaning company in Massachusetts. If you’re on a
-              budget, we’ll propose a price that works for everyone. Whatever
+              Serving clients from small offices to large industrial manufacturers and
+              government contractors, MCC is a commercial cleaning contractor with trained
+              and managed cleaners offering a higher level of affordability, consistency,
+              and reliable service than any other cleaning company in Massachusetts. If
+              you’re on a budget, we’ll propose a price that works for everyone. Whatever
               your cleaning needs, MCC is the solution.
             </p>
           </div>
@@ -189,9 +177,8 @@ export default function Landing() {
               />
               <h3 className="advantage-name">Affordable & Consistent</h3>
               <p className="advantage-description">
-                We leave spaces looking and feeling clean, with attention to
-                detail. No corner, surface, or room is left untouched thanks to
-                our dedicated team.
+                We leave spaces looking and feeling clean, with attention to detail. No
+                corner, surface, or room is left untouched thanks to our dedicated team.
               </p>
             </div>
             <div className="advantage-single">
@@ -202,10 +189,9 @@ export default function Landing() {
               />
               <h3 className="advantage-name">Responsive & Reliable</h3>
               <p className="advantage-description">
-                When it comes to cleaning companies in Massachusetts, you won’t
-                find one you can trust more than MCC. We always ensure we’re
-                meeting your expectations to create a clean and safe
-                environment.
+                When it comes to cleaning companies in Massachusetts, you won’t find one
+                you can trust more than MCC. We always ensure we’re meeting your
+                expectations to create a clean and safe environment.
               </p>
             </div>
           </div>
@@ -220,11 +206,10 @@ export default function Landing() {
               />
               <h3 className="advantage-name">Employee-Owned</h3>
               <p className="advantage-description">
-                We founded our business in 1989 and became employee-owned and
-                operated in 2021, resulting in passionate and dedicated
-                employees who each participate in profit distribution. This
-                means you’re working with a team committed to providing
-                exceptional services, no matter who at MCC you speak to.
+                We founded our business in 1989 and became employee-owned and operated in
+                2021, resulting in passionate and dedicated employees who each participate
+                in profit distribution. This means you’re working with a team committed to
+                providing exceptional services, no matter who at MCC you speak to.
               </p>
             </div>
             <div className="advantage-single">
@@ -235,9 +220,9 @@ export default function Landing() {
               />
               <h3 className="advantage-name">Technology-Supported</h3>
               <p className="advantage-description">
-                Our mobile app can be used to communicate with our cleaners in
-                their native language. Plus, our digital inspections and
-                cleaning checklists ensure we’re always going above and beyond.
+                Our mobile app can be used to communicate with our cleaners in their
+                native language. Plus, our digital inspections and cleaning checklists
+                ensure we’re always going above and beyond.
               </p>
             </div>
           </div>
@@ -247,15 +232,14 @@ export default function Landing() {
         <Reveal>
           <div className="testimonial-content">
             <p className="testimonial-text">
-              I am a Supervisor of Equipment and Facilities for a global medical
-              device manufacturer, Karl Storz. Being in business with MCC makes
-              my work life less stressful and gives our employees a spotless and
-              sanitary facility that we are quite proud of. Mass Commercial
-              Cleaning is responsive, reliable, and thorough. With the labor
-              market as tight as it is having Bill Hickman and MCC on the team
-              allows Advanced Machining the ability to grow the business by
-              allowing us to put more time and focus into equipment reliability
-              and building systems. #highlyrecommended #teamwork
+              I am a Supervisor of Equipment and Facilities for a global medical device
+              manufacturer, Karl Storz. Being in business with MCC makes my work life less
+              stressful and gives our employees a spotless and sanitary facility that we
+              are quite proud of. Mass Commercial Cleaning is responsive, reliable, and
+              thorough. With the labor market as tight as it is having Bill Hickman and
+              MCC on the team allows Advanced Machining the ability to grow the business
+              by allowing us to put more time and focus into equipment reliability and
+              building systems. #highlyrecommended #teamwork
             </p>
             <p className="testimonial-text"> - Chris</p>
           </div>
@@ -272,32 +256,36 @@ export default function Landing() {
                 <IoIosCheckmarkCircleOutline className="check-icon" />
                 <h3 className="item-heading">Supplies & Equipment</h3>
                 <p className="item-text">
-                  We invest in the right equipment and supplies to ensure our
-                  cleaners have the tools to get the job done well.
+                  We invest in the right equipment and supplies to ensure our cleaners
+                  have the tools to get the job done well.
                 </p>
               </div>
               <div className="cost-effective-item">
                 <IoIosCheckmarkCircleOutline className="check-icon" />
                 <h3 className="item-heading">Office, Industrial, School</h3>
                 <p className="item-text">
-                  No matter the environment, our trusted team is equipped with
-                  the right tools and knowledge to ensure a superior clean.
+                  No matter the environment, our trusted team is equipped with the right
+                  tools and knowledge to ensure a superior clean.
                 </p>
               </div>
               <div className="cost-effective-item">
                 <IoIosCheckmarkCircleOutline className="check-icon" />
                 <h3 className="item-heading">Professionalism</h3>
                 <p className="item-text">
-                  Our uniformed employee-owners care about the work they do and
-                  how they do it, remaining courteous and respectful with every
-                  client interaction.
+                  Our uniformed employee-owners care about the work they do and how they
+                  do it, remaining courteous and respectful with every client interaction.
                 </p>
               </div>
             </div>
           </div>
         </Reveal>
       </section>
-
+      <iframe
+        src="https://snazzymaps.com/embed/543885"
+        width="100%"
+        height="600px"
+        style={{ border: 0 }}
+      />
       <GetInTouch />
     </div>
   );
