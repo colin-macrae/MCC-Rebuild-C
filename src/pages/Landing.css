@@ -381,6 +381,48 @@
   line-height: 2;
 }
 
+/* *********************
+-----MAPS SECTION-------
+********************** */
+.leaflet-container {
+  height: 600px;
+  width: 100%;  
+  z-index: 1;
+}
+
+.map-section {
+  background-color: white;
+  position: relative;
+}
+
+.find-us {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: rgb(245, 136, 0);
+  z-index: 1011;
+  color: white;
+  height: 3rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 25%;
+  padding-right: 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+
+/* *************************************
+-----MOBILE STYLING: MAPS SECTION-------
+****************************************/
+@media only screen and (max-width: 900px) {
+  .find-us {
+    display: none;
+  }
+}
+
 /* *************************************************
 -----MOBILE STYLING: COST EFFECTIVE SECTION-------
 ************************************************* */
