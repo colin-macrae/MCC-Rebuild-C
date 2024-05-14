@@ -411,6 +411,17 @@
   font-size: 1.1rem;
 }
 
+
+
+/* *************************************
+-----MOBILE STYLING: MAPS SECTION-------
+****************************************/
+@media only screen and (max-width: 900px) {
+  .find-us {
+    display: none;
+  }
+}
+
 /* *************************************************
 -----MOBILE STYLING: COST EFFECTIVE SECTION-------
 ************************************************* */
