@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 
 
 export default function Landing() {
@@ -296,8 +297,23 @@ export default function Landing() {
             </div>
           </div>
         </Reveal>
-      </section>
-
+      </section>      
+      <MapContainer id="map" center={[42.240176, -72.370448]} zoom={10} scrollWheelZoom={true}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={[42.113839, -72.083894]}>
+          <Popup>
+          660 Main Street <br />Sturbridge, MA 01566 
+          </Popup>
+        </Marker>
+        <Marker position={[42.330088, -72.693499]}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
       <GetInTouch />
     </div>
   );
