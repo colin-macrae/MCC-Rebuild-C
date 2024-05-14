@@ -301,7 +301,7 @@ export default function Landing() {
       <section className="map-section">
         <div className="find-us">Where To Find Us</div>
         <Reveal>
-          <MapContainer  center={[42.240176, -72.370448]} zoom={10} scrollWheelZoom={true}>
+          <MapContainer  center={[42.240176, -72.370448]} zoom={10} scrollWheelZoom={false}>
             <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
