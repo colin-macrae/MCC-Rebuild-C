@@ -301,20 +301,19 @@ export default function Landing() {
       <section className="map-section">
         <div className="find-us">Where To Find Us</div>
         <Reveal>
-          <MapContainer  center={[42.240176, -72.370448]} zoom={10} scrollWheelZoom={false}>
+          <MapContainer  center={[42.240176, -72.370448]} zoom={9} scrollWheelZoom={false}>
             <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            
+            />            
             <Marker position={[42.113839, -72.083894]}>
               <Popup>
-              660 Main Street <br />Sturbridge, MA 01566 
+                660 Main Street <br />Sturbridge, MA 01566 
               </Popup>
             </Marker>
             <Marker position={[42.330088, -72.693499]}>
               <Popup>
-              140 Pine Street<br />Florence, MA 01062 
+                140 Pine Street<br />Florence, MA 01062 
               </Popup>
             </Marker>
           </MapContainer>
