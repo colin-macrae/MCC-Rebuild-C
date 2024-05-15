@@ -40,32 +40,47 @@ export default function ServiceAreas() {
           <div className="cities-container">
             <div className="row-cities">
               <ul>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
+                <li className="city text-xl">Hampshire</li>
+                <li className="city list-disc ml-4">Amherst</li>
+                <li className="city list-disc ml-4">Belchertown</li>
+                <li className="city list-disc ml-4">Easthapton</li>
+                <li className="city list-disc ml-4">Hadley</li>
+                <li className="city list-disc ml-4">Northampton</li>
+                <li className="city list-disc ml-4">South Hadley</li>
+                <li className="city list-disc ml-4">Westhampton</li>
+                <li className="city list-disc ml-4">Williamsburg</li>
               </ul>
             </div>
             <div className="row-cities">
               <ul>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
+                <li className="city text-xl">Hampden</li>
+                <li className="city list-disc ml-4">Agawam</li>
+                <li className="city list-disc ml-4">Chicopee</li>
+                <li className="city list-disc ml-4">Holyoke</li>
+                <li className="city list-disc ml-4">Longmeadow</li>
+                <li className="city list-disc ml-4">Monson</li>
+                <li className="city list-disc ml-4">Palmer</li>
+                <li className="city list-disc ml-4">Russell</li>
+                <li className="city list-disc ml-4">Springfield</li>
+                <li className="city list-disc ml-4">West Springfield</li>
+                <li className="city list-disc ml-4">Wilbraham</li>
               </ul>
             </div>
             <div className="row-cities">
               <ul>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
-                <li className="city">City Name</li>
+                <li className="city text-xl">Worcester</li>
+                <li className="city list-disc ml-4">Auburn</li>
+                <li className="city list-disc ml-4">Barre</li>
+                <li className="city list-disc ml-4">Brookfield</li>
+                <li className="city list-disc ml-4">Charlton</li>
+                <li className="city list-disc ml-4">Fitchburg</li>
+                <li className="city list-disc ml-4">Leominister</li>
+                <li className="city list-disc ml-4">Northborough</li>
+                <li className="city list-disc ml-4">Spencer</li>
+                <li className="city list-disc ml-4">Southbridge</li>
+                <li className="city list-disc ml-4">Sturbridge</li>
+                <li className="city list-disc ml-4">Westborough</li>
+                <li className="city list-disc ml-4">Worcester</li>
               </ul>
             </div>
           </div>
