@@ -67,7 +67,7 @@ export default function Landing() {
           <div className="content-container">
             <div className="icon-container">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-48@2x.jpg"
+                src="src/assets/icon-house.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -75,7 +75,7 @@ export default function Landing() {
             </div>
             <div className="icon-container">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-46@2x.jpg"
+                src="src/assets/icon-buildings.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -83,7 +83,7 @@ export default function Landing() {
             </div>
             <div className="icon-container">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-44@2x.jpg"
+                src="src/assets/icon-tools.jpg"
                 alt=""
                 className="three-icons"
               />
