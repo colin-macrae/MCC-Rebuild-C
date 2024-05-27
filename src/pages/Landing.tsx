@@ -5,18 +5,17 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0015.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0017-250x350.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0057.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/church-pew-scaled.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0112.jpg",
+    "src/assets/carousel-1.jpeg",
+    "src/assets/carousel-2.jpeg",
+    "src/assets/carousel-3.jpeg",
+    "src/assets/carousel-4.jpeg",
+    "src/assets/carousel-5.jpeg",
   ];
 
   const nextSlide = () => {
@@ -35,7 +34,17 @@ export default function Landing() {
   }, []);
 
   return (
-    <div className="background-image">
+    <div
+      className="
+        bg-custom-image 
+        bg-fixed 
+        relative 
+        w-full 
+        h-full 
+        bg-cover 
+        bg-center 
+        z-50"
+    >
       <section className="about-heading-section">
         <Reveal>
           <div className="about-heading-text">
@@ -58,7 +67,7 @@ export default function Landing() {
           <div className="content-container">
             <div className="icon-container">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-48@2x.jpg"
+                src="src/assets/icon-house.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -66,7 +75,7 @@ export default function Landing() {
             </div>
             <div className="icon-container">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-46@2x.jpg"
+                src="src/assets/icon-buildings.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -74,7 +83,7 @@ export default function Landing() {
             </div>
             <div className="icon-container">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-44@2x.jpg"
+                src="src/assets/icon-tools.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -184,7 +193,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_300248181_Preview@2x.jpg"
+                src="src/assets/mcc-advantage-1.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -197,7 +206,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_327396949_Preview@2x.jpg"
+                src="src/assets/mcc-advantage-2.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -215,7 +224,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_568417620_Preview@2x.jpg"
+                src="src/assets/mcc-advantage-3.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -230,7 +239,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/giorgio-trovato-XxAy813D66I-unsplash@2x.jpg"
+                src="src/assets/mcc-advantage-4.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -297,28 +306,35 @@ export default function Landing() {
             </div>
           </div>
         </Reveal>
-      </section> 
+      </section>
       <section className="map-section">
         <div className="find-us">Where To Find Us</div>
         <Reveal>
-          <MapContainer  center={[42.240176, -72.370448]} zoom={9} scrollWheelZoom={false}>
+          <MapContainer
+            center={[42.240176, -72.370448]}
+            zoom={9}
+            scrollWheelZoom={false}
+          >
             <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />            
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
             <Marker position={[42.113839, -72.083894]}>
               <Popup>
-                660 Main Street <br />Sturbridge, MA 01566 
+                660 Main Street <br />
+                Sturbridge, MA 01566
               </Popup>
             </Marker>
             <Marker position={[42.330088, -72.693499]}>
               <Popup>
-                140 Pine Street<br />Florence, MA 01062 
+                140 Pine Street
+                <br />
+                Florence, MA 01062
               </Popup>
             </Marker>
           </MapContainer>
-        </Reveal>      
-      </section>         
+        </Reveal>
+      </section>
       <GetInTouch />
     </div>
   );

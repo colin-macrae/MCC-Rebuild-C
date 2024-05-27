@@ -25,6 +25,7 @@ export default function App() {
           <Route path="/Carpet-Cleaning" element={<CarpetCleaning />} />
           <Route path="/Janitorial-Services" element={<JanitorialServices />} />
           <Route path="/Office-Cleaning" element={<OfficeCleaning />} />
+          <Route path="*" element={<h1>404</h1>} />
         </Route>
       </Routes>
       <Footer />
