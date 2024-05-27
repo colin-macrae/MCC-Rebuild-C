@@ -105,7 +105,7 @@ export default function EmploymentForm(): JSX.Element {
           </div>
           <div>
             {" "}
-            <input className="full-width" {...register("city")} />
+            <input className="full-width" {...register("addressOne")} />
           </div>
           <div className="sub-label">
             <span>Address 1</span>
