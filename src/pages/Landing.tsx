@@ -11,7 +11,7 @@ export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "src/assets/carousel-1.jpeg",
+    "./src/assets/carousel-1.jpeg",
     "src/assets/carousel-2.jpeg",
     "src/assets/carousel-3.jpeg",
     "src/assets/carousel-4.jpeg",
