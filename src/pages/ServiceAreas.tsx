@@ -21,7 +21,7 @@ export default function ServiceAreas() {
           <div className="intro-container">
             <img
               className="intro-image MA-img"
-              src="https://www.massachusetts-map.org/massachusetts-nc.gif"
+              src="src/assets/service-areas-map.gif"
               alt="worker working"
             />
             <div className="intro-copy-container">

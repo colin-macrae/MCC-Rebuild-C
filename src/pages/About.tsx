@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal.tsx";
 
 const images = [
-  "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0028.jpg",
-  "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0110.jpg",
-  "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_9912.jpg",
-  "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_9931.jpg",
+  "src/assets/about-1.jpeg",
+  "src/assets/about-2.jpeg",
+  "src/assets/about-3.jpeg",
+  "src/assets/about-4.jpeg",
 ];
 
 export default function About() {
@@ -128,7 +128,7 @@ export default function About() {
         <div>
           
             <img
-              src="https://masscocleaning.wpengine.com/wp-content/uploads/DSC_9794.jpg"
+              src="src/assets/about-team-1.jpeg"
               alt="mass comm team posing"
               className="team-pic-single"
             />
@@ -136,12 +136,12 @@ export default function About() {
         <div className="pics-double-container">
           <div>
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/DSC_9878@2x.jpg"
+                src="src/assets/about-team-2.jpeg"
                 alt="mass comm team posing"
                 className="team-pic-double"
               />
             <img
-              src="https://masscocleaning.wpengine.com/wp-content/uploads/DSC_9858@2x.jpg"
+              src="src/assets/about-team-3.jpeg"
               alt="mass comm team posing"
               className="team-pic-double"
             />
