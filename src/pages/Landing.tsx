@@ -5,8 +5,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,7 +34,17 @@ export default function Landing() {
   }, []);
 
   return (
-    <div className="background-image">
+    <div
+      className="
+        bg-custom-image 
+        bg-fixed 
+        relative 
+        w-full 
+        h-full 
+        bg-cover 
+        bg-center 
+        z-50"
+    >
       <section className="about-heading-section">
         <Reveal>
           <div className="about-heading-text">
@@ -297,28 +306,35 @@ export default function Landing() {
             </div>
           </div>
         </Reveal>
-      </section> 
+      </section>
       <section className="map-section">
         <div className="find-us">Where To Find Us</div>
         <Reveal>
-          <MapContainer  center={[42.240176, -72.370448]} zoom={9} scrollWheelZoom={false}>
+          <MapContainer
+            center={[42.240176, -72.370448]}
+            zoom={9}
+            scrollWheelZoom={false}
+          >
             <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />            
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
             <Marker position={[42.113839, -72.083894]}>
               <Popup>
-                660 Main Street <br />Sturbridge, MA 01566 
+                660 Main Street <br />
+                Sturbridge, MA 01566
               </Popup>
             </Marker>
             <Marker position={[42.330088, -72.693499]}>
               <Popup>
-                140 Pine Street<br />Florence, MA 01062 
+                140 Pine Street
+                <br />
+                Florence, MA 01062
               </Popup>
             </Marker>
           </MapContainer>
-        </Reveal>      
-      </section>         
+        </Reveal>
+      </section>
       <GetInTouch />
     </div>
   );
