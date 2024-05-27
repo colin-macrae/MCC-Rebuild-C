@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal.tsx";
 
 const images = [
-  "src/pages/about-1.jpeg",
+  "src/assets/about-1.jpeg",
   "src/assets/about-2.jpeg",
   "src/assets/about-3.jpeg",
   "src/assets/about-4.jpeg",
