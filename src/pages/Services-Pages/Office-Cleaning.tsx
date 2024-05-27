@@ -5,7 +5,7 @@ export default function OfficeCleaning() {
   const pageHeadingText =
     "MCC Cleaning Services excels in office cleaning with meticulous attention to detail, ensuring pristine workspaces that inspire productivity and wellbeing. Our company's commitment to efficiency and hygiene sets us apart, delivering consistently impeccable results tailored to meet every client's needs.";
   const image =
-    "https://media.licdn.com/dms/image/D4E12AQEbk2ugA2rOHw/article-inline_image-shrink_1500_2232/0/1697025096211?e=1718841600&v=beta&t=enjEv6pHff5E5bUfucZZD111yiOYeMxIqXUnoSmeh_Y";
+    "src/assets/office-cleaning.jpeg";
   const introHeading = "Our Expert Office Cleaning Services";
   const introText =
     "We pride ourselves on offering comprehensive office cleaning solutions tailored to your specific requirements. Our highly trained and professional team utilizes industry-leading techniques and eco-friendly products to deliver unparalleled cleanliness and hygiene in your workspace. From daily maintenance to deep cleaning, we ensure every corner is spotless, promoting a healthier and more inviting environment for your employees and visitors. With our flexible scheduling and personalized approach, you can trust us to maintain the impeccable standards your office deserves, allowing you to focus on what matters most—your business.";

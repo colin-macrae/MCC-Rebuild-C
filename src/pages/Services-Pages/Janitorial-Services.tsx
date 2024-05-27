@@ -5,7 +5,7 @@ export default function JanitorialServices() {
   const pageHeadingText =
     "MCC excels in janitorial services through meticulous attention to detail and a commitment to exceeding cleanliness standards. Our company's reputation for excellence is built on reliable, efficient, and thorough cleaning solutions tailored to meet every client's needs.";
   const image =
-    "https://starbuildingservices.com/wp-content/uploads/commercial-janitorial-services.jpg";
+    "src/assets/janitorial-services.png";
   const introHeading = "Unparalleled Janitorial Excellence";
   const introText =
     "At MCC, our dedication to delivering unmatched janitorial services is evident in every aspect of our operations. Our highly-trained cleaning staff utilizes cutting-edge techniques and top-quality equipment to ensure pristine cleanliness in every corner of your space. From regular maintenance to specialized deep cleaning, we offer comprehensive solutions tailored to your specific requirements. With a focus on environmental sustainability, we employ eco-friendly practices and products to minimize our ecological footprint while maximizing the health and safety of your environment. Trust MCC for superior janitorial services that go above and beyond your expectations, ensuring a spotless and welcoming atmosphere for your clientele and employees alike.";
