@@ -11,11 +11,11 @@ export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "src/assets/carousel-1.jpeg",
-    "src/assets/carousel-2.jpeg",
-    "src/assets/carousel-3.jpeg",
-    "src/assets/carousel-4.jpeg",
-    "src/assets/carousel-5.jpeg",
+    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0015.jpg",
+    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0017-250x350.jpg",
+    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0057.jpg",
+    "https://masscocleaning.wpengine.com/wp-content/uploads/church-pew-scaled.jpg",
+    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0112.jpg",
   ];
 
   const nextSlide = () => {
@@ -57,7 +57,7 @@ export default function Landing() {
           <div className="content-container">
             <div className="icon-container">
               <img
-                src="src/assets/icon-house.jpg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-48@2x.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -65,7 +65,7 @@ export default function Landing() {
             </div>
             <div className="icon-container">
               <img
-                src="src/assets/icon-buildings.jpg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-46@2x.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -73,7 +73,7 @@ export default function Landing() {
             </div>
             <div className="icon-container">
               <img
-                src="src/assets/icon-tools.jpg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/Group-44@2x.jpg"
                 alt=""
                 className="three-icons"
               />
@@ -183,7 +183,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="src/assets/mcc-advantage-1.jpeg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_300248181_Preview@2x.jpg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -196,7 +196,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="src/assets/mcc-advantage-2.jpeg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_327396949_Preview@2x.jpg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -214,7 +214,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="src/assets/mcc-advantage-3.jpeg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_568417620_Preview@2x.jpg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -229,7 +229,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="src/assets/mcc-advantage-4.jpeg"
+                src="https://masscocleaning.wpengine.com/wp-content/uploads/giorgio-trovato-XxAy813D66I-unsplash@2x.jpg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />

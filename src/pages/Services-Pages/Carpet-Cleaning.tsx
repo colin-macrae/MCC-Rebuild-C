@@ -7,7 +7,7 @@ export default function CarpetCleaning () {
   const pageHeadingText =
     "MCC Carpet Cleaners excels in restoring carpets to pristine condition through advanced cleaning techniques and unmatched attention to detail, ensuring a fresh and inviting ambiance for every space.";
   const image =
-    "src/assets/carpet-cleaning.png";
+    "https://s3media.angieslist.com/s3fs-public/Professional-carpet-cleaner.jpeg";
   const introHeading = "Our Proven Carpet Cleaning Process";
   const introText =
     "We employ a meticulously crafted cleaning process that guarantees exceptional results. Beginning with a thorough inspection of your carpets, we identify specific areas of concern and tailor our approach accordingly. Our state-of-the-art equipment and eco-friendly cleaning solutions penetrate deep into the fibers, effectively removing embedded dirt, stains, and allergens. With our skilled technicians at the helm, you can trust that your carpets will receive the care and attention they deserve, leaving them revitalized and rejuvenated.";
