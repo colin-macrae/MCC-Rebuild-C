@@ -11,7 +11,7 @@ export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "../src/assets/carousel-1.jpeg",
+    "src/assets/carousel-1.jpeg",
     "src/assets/carousel-2.jpeg",
     "src/assets/carousel-3.jpeg",
     "src/assets/carousel-4.jpeg",
@@ -34,17 +34,7 @@ export default function Landing() {
   }, []);
 
   return (
-    <div
-      className="
-        bg-custom-image 
-        bg-fixed 
-        relative 
-        w-full 
-        h-full 
-        bg-cover 
-        bg-center 
-        z-50"
-    >
+    <div className="background-image">
       <section className="about-heading-section">
         <Reveal>
           <div className="about-heading-text">
