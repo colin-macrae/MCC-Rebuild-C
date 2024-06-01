@@ -11,7 +11,7 @@ export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0015.jpg",
+    "src/assets/carousel-1.jpg",
     "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0017-250x350.jpg",
     "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0057.jpg",
     "https://masscocleaning.wpengine.com/wp-content/uploads/church-pew-scaled.jpg",
