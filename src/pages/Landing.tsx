@@ -56,27 +56,15 @@ export default function Landing() {
         <Reveal>
           <div className="content-container">
             <div className="icon-container">
-              <img
-                src="/icon-house.jpg"
-                alt=""
-                className="three-icons"
-              />
+              <img src="/icon-house.jpg" alt="" className="three-icons" />
               <h3 className="icons-text">Affordable & Consistent</h3>
             </div>
             <div className="icon-container">
-              <img
-                src="/icon-buildings.jpg"
-                alt=""
-                className="three-icons"
-              />
+              <img src="/icon-buildings.jpg" alt="" className="three-icons" />
               <h3 className="icons-text">Employee-Owned</h3>
             </div>
             <div className="icon-container">
-              <img
-                src="/icon-tools.jpg"
-                alt=""
-                className="three-icons"
-              />
+              <img src="/icon-tools.jpg" alt="" className="three-icons" />
               <h3 className="icons-text">Management Oversight</h3>
             </div>
           </div>
@@ -311,12 +299,14 @@ export default function Landing() {
             />
             <Marker position={[42.113839, -72.083894]}>
               <Popup>
+                MCC <br />
                 660 Main Street <br />
                 Sturbridge, MA 01566
               </Popup>
             </Marker>
             <Marker position={[42.330088, -72.693499]}>
               <Popup>
+                MCC <br />
                 140 Pine Street
                 <br />
                 Florence, MA 01062
