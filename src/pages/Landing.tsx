@@ -12,10 +12,10 @@ export default function Landing() {
 
   const images = [
     "/carousel-1.jpeg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0017-250x350.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0057.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/church-pew-scaled.jpg",
-    "https://masscocleaning.wpengine.com/wp-content/uploads/DSC_0112.jpg",
+    "/carousel-2.jpeg",
+    "/carousel-3.jpeg",
+    "/carousel-4.jpeg",
+    "/carousel-5.jpeg",
   ];
 
   const nextSlide = () => {
