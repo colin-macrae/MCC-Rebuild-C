@@ -34,12 +34,12 @@ export default function EmploymentForm(): JSX.Element {
       // Send email using emailjs
       await emailjs.send(
         // below is "YOUR_SERVICE_ID"
-        "service_wvced9l",
+        "service_5dojscs",
         // below is "YOUR_TEMPLATE_ID"
-        "template_kudh9jr",
+        "template_pwvf6im",
         data,
         // below is "YOUR_USER_ID"/public key
-        "Bv07-mPb90fppYjnE"
+        "e-OxdRb4JXB7JDIzC"
       );
       setSentClassName("email-sent");
       setFormClassName("form hide");
