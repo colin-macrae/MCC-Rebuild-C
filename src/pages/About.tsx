@@ -1,21 +1,27 @@
-import "./About.css";
-import { useState, useEffect } from "react";
-import "../assets/111-Thatcher-Day-1-roback-11.jpg";
-import "../assets/111-Thatcher-Day-1-roback-3.jpg";
-import GetInTouch from "../components/GetInTouch.tsx";
-import { Link } from "react-router-dom"; 
-import Reveal from "../components/Utils/Reveal.tsx";
+import './About.css';
+import { useState, useEffect } from 'react';
+import '../assets/111-Thatcher-Day-1-roback-11.jpg';
+import '../assets/111-Thatcher-Day-1-roback-3.jpg';
+import GetInTouch from '../components/GetInTouch.tsx';
+import Reveal from '../components/Utils/Reveal.tsx';
+import { useNavigate } from 'react-router-dom';
 
 const images = [
-  "/about-1.jpeg",
-  "/about-2.jpeg",
-  "/about-3.jpeg",
-  "/about-4.jpeg",
+  '/about-1.jpeg',
+  '/about-2.jpeg',
+  '/about-3.jpeg',
+  '/about-4.jpeg',
 ];
 
 export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showPhoneNumber, setShowPhoneNumber] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleEmailUsClick = () => {
+    navigate('/contact', { state: { scrollToBottom: true } });
+  };
 
   const nextSlide = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -45,9 +51,9 @@ export default function About() {
               Massachusetts is that we are employee-owned. When you do business
               with us, you are directly supporting our cleaners and community.
             </p>
-            <Link to="/contact">
-              <button className="btn">CONTACT US &rsaquo;</button>
-            </Link>
+            <button onClick={handleEmailUsClick} className="btn">
+              CONTACT US &rsaquo;
+            </button>
           </div>
         </Reveal>
       </section>
@@ -66,7 +72,7 @@ export default function About() {
               className="btn"
               onClick={() => setShowPhoneNumber(!showPhoneNumber)}
             >
-              {showPhoneNumber ? "(413) 568-4696" : "CALL US NOW"}
+              {showPhoneNumber ? '(413) 568-4696' : 'CALL US NOW'}
             </button>
           </div>
         </Reveal>
@@ -92,13 +98,13 @@ export default function About() {
                   key={index}
                   src={image}
                   alt={`Preview ${index + 1}`}
-                  className={index === currentImageIndex ? "active" : ""}
+                  className={index === currentImageIndex ? 'active' : ''}
                   onClick={() => setCurrentImageIndex(index)}
                 />
               ))}
             </div>
           </div>
-        
+
           <div className="about-caring-text">
             <p className="history-and-about">
               Mass Commercial Cleaning, Inc. is an MA-based commercial cleaning
@@ -124,29 +130,29 @@ export default function About() {
             </p>
           </div>
         </Reveal>
-<Reveal>
-        <div>
-          
+        <Reveal>
+          <div>
             <img
               src="/about-team-1.jpeg"
               alt="mass comm team posing"
               className="team-pic-single"
             />
-        </div>
-        <div className="pics-double-container">
-          <div>
+          </div>
+          <div className="pics-double-container">
+            <div>
               <img
                 src="/about-team-2.jpeg"
                 alt="mass comm team posing"
                 className="team-pic-double"
               />
-            <img
-              src="/about-team-3.jpeg"
-              alt="mass comm team posing"
-              className="team-pic-double"
-            />
+              <img
+                src="/about-team-3.jpeg"
+                alt="mass comm team posing"
+                className="team-pic-double"
+              />
+            </div>
           </div>
-        </div></Reveal>
+        </Reveal>
       </section>
 
       <GetInTouch />

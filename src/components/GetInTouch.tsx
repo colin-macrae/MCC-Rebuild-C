@@ -1,8 +1,14 @@
-import "./GetInTouch.css";
-import { Link } from "react-router-dom";
-import Reveal from "./Utils/Reveal";
+import './GetInTouch.css';
+import { useNavigate } from 'react-router-dom';
+import Reveal from './Utils/Reveal';
 
 export default function GetInTouch() {
+  const navigate = useNavigate();
+
+  const handleEmailUsClick = () => {
+    navigate('/contact', { state: { scrollToBottom: true } });
+  };
+
   return (
     <section className="get-in-touch-section get-in-touch-bg">
       <Reveal>
@@ -13,9 +19,9 @@ export default function GetInTouch() {
             MCC is the one to call. Let’s get started on ensuring your cleaning
             needs are being met.
           </p>
-          <Link to="/contact">
-            <button className="btn">CONTACT US &nbsp; &rsaquo;</button>
-          </Link>
+          <button onClick={handleEmailUsClick} className="btn">
+            CONTACT US &nbsp; &rsaquo;
+          </button>
         </div>
       </Reveal>
     </section>

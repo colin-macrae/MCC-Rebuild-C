@@ -2,13 +2,19 @@ import GetInTouch from "../components/GetInTouch";
 import "./Landing.css";
 import "./About.css";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const navigate = useNavigate();
+
+  const handleEmailUsClick = () => {
+    navigate('/contact', { state: { scrollToBottom: true } });
+  };
 
   const images = [
     "/carousel-1.jpeg",
@@ -46,9 +52,9 @@ export default function Landing() {
               cleaning services, we’re the corporate cleaning company in the New
               England area.
             </p>
-            <Link to="/contact">
-              <button className="btn">CONTACT US &rsaquo;</button>
-            </Link>
+            {/* <Link to="/contact"> */}
+              <button onClick={handleEmailUsClick} className="btn">CONTACT US &rsaquo;</button>
+            {/* </Link> */}
           </div>
         </Reveal>
       </section>
