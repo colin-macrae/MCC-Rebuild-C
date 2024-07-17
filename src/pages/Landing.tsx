@@ -175,7 +175,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_300248181_Preview@2x.jpg"
+                src="/mcc-advantage-1.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -188,7 +188,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_327396949_Preview@2x.jpg"
+                src="/mcc-advantage-2.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -206,7 +206,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_568417620_Preview@2x.jpg"
+                src="/mcc-advantage-3.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -221,7 +221,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/giorgio-trovato-XxAy813D66I-unsplash@2x.jpg"
+                src="/mcc-advantage-4.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
