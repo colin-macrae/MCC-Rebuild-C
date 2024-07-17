@@ -289,8 +289,9 @@ export default function Landing() {
           </div>
         </Reveal>
       </section>
-      <section className="map-section">
-        <div className="find-us">Where To Find Us</div>
+      <section className="map-section bg-white">
+        <div className="map-scn-container m-auto max-w-[2000px]">
+<div className="find-us">Where To Find Us</div>
         <Reveal>
           <MapContainer
             center={[42.240176, -72.370448]}
@@ -318,6 +319,8 @@ export default function Landing() {
             </Marker>
           </MapContainer>
         </Reveal>
+        </div>
+        
       </section>
       <GetInTouch />
     </div>
