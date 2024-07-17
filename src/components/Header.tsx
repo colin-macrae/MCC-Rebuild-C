@@ -12,6 +12,10 @@ export function Header() {
 
   const navigate = useNavigate();
 
+  const handleEmailUsClick = () => {
+    navigate('/contact', { state: { scrollToBottom: true } });
+  };
+
   return (
     <>
       <div className="HEADER bg-[#005067] sticky top-0 z-10">
@@ -26,14 +30,14 @@ export function Header() {
             </a>
           </div>
           <div className="HEAD-RIGHT flex items-center mb-10 text-white font-bold">
-            <Link to="/contact">
-              <button className="flex leading-5">
+            {/* <Link to={{pathname: '/contact', state: { scrollToBottom: true}}}> */}
+              <button onClick={handleEmailUsClick} className="flex leading-5">
                 <span className="pr-1.5">
                   <HiOutlineMail size={20} />
                 </span>{" "}
                 EMAIL US
               </button>
-            </Link>
+            {/* </Link> */}
 
             <button
               className="call-us-btn text-white text-center w-48 h-10 px-4 self-center bg-[#F58800] rounded font-bold mx-5"

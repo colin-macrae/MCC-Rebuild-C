@@ -2,8 +2,19 @@ import ContactForm from "./ContactForm";
 import "./Employment.css";
 import "./Contact.css";
 import Reveal from "../components/Utils/Reveal";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Contact(): JSX.Element {
+  const location = useLocation();
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (location.state?.scrollToBottom && scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: 'smooth'});
+    }
+  }, [location.state]);
+  
   return (
     <div className="background-image-contact">
       <section className="about-heading-section">
@@ -20,7 +31,7 @@ export default function Contact(): JSX.Element {
         </Reveal>
       </section>
       <div className="w-full">
-        <section className="form-container contact-bg p-auto m-auto">
+        <section ref={scrollRef} className="form-container contact-bg p-auto m-auto">
           <Reveal>
             <h2 className="text-5xl pb-8 font-medium text-[#005067] ">
               Contact Us

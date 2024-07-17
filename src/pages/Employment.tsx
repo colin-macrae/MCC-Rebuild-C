@@ -1,9 +1,14 @@
-import "./Employment.css";
-import EmploymentForm from "./EmploymentForm";
-import { Link } from "react-router-dom";
-import Reveal from "../components/Utils/Reveal";
+import './Employment.css';
+import EmploymentForm from './EmploymentForm';
+import { useNavigate } from 'react-router-dom';
+import Reveal from '../components/Utils/Reveal';
 
 export default function Employment() {
+  const navigate = useNavigate();
+  const handleEmailUsClick = () => {
+    navigate('/contact', { state: { scrollToBottom: true } });
+  };
+
   return (
     <div className="background-image">
       <section className="about-heading-section">
@@ -15,9 +20,9 @@ export default function Employment() {
               Massachusetts is that we are employee-owned. When you do business
               with us, you are directly supporting our cleaners and community.
             </p>
-            <Link to="/contact">
-              <button className="btn">CONTACT US &rsaquo;</button>
-            </Link>
+            <button onClick={handleEmailUsClick} className="btn">
+              CONTACT US &rsaquo;
+            </button>
           </div>
         </Reveal>
       </section>
