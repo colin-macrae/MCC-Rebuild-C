@@ -29,7 +29,7 @@ export default function ServicesPagesTemplate(
     <div>
       <Reveal>
         <section className="heading-section">
-          <div className="heading-text">
+          <div className="heading-text max-w-[1400px]">
             <h2>{pageHeading}</h2>
             <p>{pageHeadingText}</p>
           </div>

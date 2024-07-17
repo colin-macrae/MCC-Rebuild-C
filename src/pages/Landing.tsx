@@ -52,9 +52,7 @@ export default function Landing() {
               cleaning services, we’re the corporate cleaning company in the New
               England area.
             </p>
-            {/* <Link to="/contact"> */}
               <button onClick={handleEmailUsClick} className="btn">CONTACT US &rsaquo;</button>
-            {/* </Link> */}
           </div>
         </Reveal>
       </section>
@@ -257,7 +255,7 @@ export default function Landing() {
       </section>
       <section className="cost-effective-section">
         <Reveal>
-          <div className="cost-effective-container">
+          <div className="cost-effective-container max-w-[1600px]">
             <div className="cost-effective-heading">
               <h2>Cost Effective Cleaning</h2>
             </div>

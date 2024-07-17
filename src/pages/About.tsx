@@ -59,7 +59,7 @@ export default function About() {
       </section>
       <section className="about-caring-section">
         <Reveal>
-          <div className="about-caring-text">
+          <div className="about-caring-text m-auto max-w-[1200px]">
             <h2>Caring About Every Clean</h2>
             <p>
               As employee-owners, each MCC team member is trained in providing a
@@ -105,7 +105,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="about-caring-text">
+          <div className="about-caring-text m-auto max-w-[1200px]">
             <p className="history-and-about">
               Mass Commercial Cleaning, Inc. is an MA-based commercial cleaning
               company founded in 1989. Our company has grown from a two-person
@@ -131,7 +131,8 @@ export default function About() {
           </div>
         </Reveal>
         <Reveal>
-          <div>
+          <div className=' m-auto'>
+             <div>
             <img
               src="/about-team-1.jpeg"
               alt="mass comm team posing"
@@ -152,6 +153,8 @@ export default function About() {
               />
             </div>
           </div>
+          </div>
+         
         </Reveal>
       </section>
 

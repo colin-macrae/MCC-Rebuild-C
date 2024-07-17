@@ -7,7 +7,7 @@ export default function ServiceAreas() {
     <div>
       <Reveal>
         <section className="heading-section">
-          <div className="heading-text">
+          <div className="heading-text max-w-[1400px]">
             <h2>Service Areas</h2>
             <p>
               Discover MCC's reliable commercial cleaning services covering the
