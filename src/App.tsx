@@ -10,6 +10,7 @@ import JanitorialServices from "./pages/Services-Pages/Janitorial-Services";
 import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
 import Footer from "./components/Footer";
 import ServiceAreas from "./pages/ServiceAreas";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -25,7 +26,7 @@ export default function App() {
           <Route path="/Carpet-Cleaning" element={<CarpetCleaning />} />
           <Route path="/Janitorial-Services" element={<JanitorialServices />} />
           <Route path="/Office-Cleaning" element={<OfficeCleaning />} />
-          <Route path="*" element={<h1>404</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
       <Footer />
