@@ -16,7 +16,7 @@ export default function Contact(): JSX.Element {
   }, [location.state]);
   
   return (
-    <div className="background-image-contact">
+    <div className="background-image-contact ">
       <section className="about-heading-section">
         <Reveal>
           <div className="about-heading-text">
@@ -33,11 +33,11 @@ export default function Contact(): JSX.Element {
       <div className="w-full">
         <section ref={scrollRef} className="form-container contact-bg p-auto m-auto">
           <Reveal>
-            <h2 className="text-5xl pb-8 font-medium text-[#005067] ">
+            <h2 className="text-5xl pb-8 font-medium text-[#005067] m-auto max-w-[1200px]">
               Contact Us
             </h2>
 
-            <div className="w-full lg:flex ">
+            <div className="w-full lg:flex m-auto max-w-[1200px]">
               <div className="lg:w-2/3">
                 <ContactForm />
               </div>

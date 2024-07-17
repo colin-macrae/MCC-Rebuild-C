@@ -40,7 +40,7 @@ export default function ContactForm(): JSX.Element {
   };
 
   return (
-    <div className="">
+    <div>
       <div className={sentClassName}>
         Thank you for contacting us. We will be in touch soon!
       </div>

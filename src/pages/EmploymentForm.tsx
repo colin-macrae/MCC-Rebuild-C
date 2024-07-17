@@ -50,7 +50,7 @@ export default function EmploymentForm(): JSX.Element {
   };
 
   return (
-    <div>
+    <div className="m-auto max-w-[1200px]">
       <div className={sentClassName}>
         Application sent successfully. We'll contact you if you are a good
         potential match.

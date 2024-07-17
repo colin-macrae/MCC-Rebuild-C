@@ -390,8 +390,7 @@
   z-index: 1;
 }
 
-.map-section {
-  background-color: white;
+.map-scn-container {
   position: relative;
 }
 

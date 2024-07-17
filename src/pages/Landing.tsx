@@ -52,9 +52,7 @@ export default function Landing() {
               cleaning services, we’re the corporate cleaning company in the New
               England area.
             </p>
-            {/* <Link to="/contact"> */}
               <button onClick={handleEmailUsClick} className="btn">CONTACT US &rsaquo;</button>
-            {/* </Link> */}
           </div>
         </Reveal>
       </section>
@@ -177,7 +175,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_300248181_Preview@2x.jpg"
+                src="/mcc-advantage-1.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -190,7 +188,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_327396949_Preview@2x.jpg"
+                src="/mcc-advantage-2.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -208,7 +206,7 @@ export default function Landing() {
           <div className="advantages-row">
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/AdobeStock_568417620_Preview@2x.jpg"
+                src="/mcc-advantage-3.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -223,7 +221,7 @@ export default function Landing() {
             </div>
             <div className="advantage-single">
               <img
-                src="https://masscocleaning.wpengine.com/wp-content/uploads/giorgio-trovato-XxAy813D66I-unsplash@2x.jpg"
+                src="/mcc-advantage-4.jpeg"
                 alt="mass comm team posing"
                 className="advantages-img"
               />
@@ -257,7 +255,7 @@ export default function Landing() {
       </section>
       <section className="cost-effective-section">
         <Reveal>
-          <div className="cost-effective-container">
+          <div className="cost-effective-container max-w-[1600px]">
             <div className="cost-effective-heading">
               <h2>Cost Effective Cleaning</h2>
             </div>
@@ -291,8 +289,9 @@ export default function Landing() {
           </div>
         </Reveal>
       </section>
-      <section className="map-section">
-        <div className="find-us">Where To Find Us</div>
+      <section className="map-section bg-white">
+        <div className="map-scn-container m-auto max-w-[2000px]">
+<div className="find-us">Where To Find Us</div>
         <Reveal>
           <MapContainer
             center={[42.240176, -72.370448]}
@@ -320,6 +319,8 @@ export default function Landing() {
             </Marker>
           </MapContainer>
         </Reveal>
+        </div>
+        
       </section>
       <GetInTouch />
     </div>
