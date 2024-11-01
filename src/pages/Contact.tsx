@@ -14,7 +14,7 @@ export default function Contact(): JSX.Element {
       scrollRef.current.scrollIntoView({ behavior: 'smooth'});
     }
   }, [location.state]);
-  
+
   return (
     <div className="background-image-contact ">
       <section className="about-heading-section">
@@ -48,7 +48,7 @@ export default function Contact(): JSX.Element {
                 <p className="pb-1">660 Main Street, </p>
                 <p className=" pb-6">Sturbridge, MA 01566</p>
                 <p className="pb-1">(413) 568-4696</p>
-                <p className="">Info@macommercialclean.com</p>
+                <p className="">info@macommclean.com</p>
               </div>
             </div>
           </Reveal>
