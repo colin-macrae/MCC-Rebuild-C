@@ -47,7 +47,7 @@ export default function Contact(): JSX.Element {
                 <p className="pb-6">Florence, MA 01062</p>
                 <p className="pb-1">660 Main Street, </p>
                 <p className=" pb-6">Sturbridge, MA 01566</p>
-                <p className="pb-1">(413) 568-4696</p>
+                <p className="pb-1">(413) 586-4696</p>
                 <p className="">info@macommclean.com</p>
               </div>
             </div>

@@ -25,7 +25,7 @@ export default function Footer() {
               <p className="flex justify-center pb-3 lg:justify-start">
                 Florence, MA 01062
               </p>
-              <p className="flex justify-center lg:justify-start">(413) 568-4696</p>
+              <p className="flex justify-center lg:justify-start">(413) 586-4696</p>
               <p className="flex justify-center lg:justify-start">Info@macommclean.com</p>
             </div>
           </div>
