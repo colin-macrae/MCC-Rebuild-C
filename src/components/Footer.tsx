@@ -16,17 +16,23 @@ export default function Footer() {
             </div>
             <div className="text-sm">
               <p className="flex justify-center footer-txt lg:justify-start">
-                660 Main Street{" "}
+                660 Main Street{' '}
               </p>
               <p className="flex justify-center pb-3 lg:justify-start">
                 Sturbridge, MA 01566
               </p>
-              <p className="flex justify-center lg:justify-start">140 Pine Street</p>
+              <p className="flex justify-center lg:justify-start">
+                140 Pine Street
+              </p>
               <p className="flex justify-center pb-3 lg:justify-start">
                 Florence, MA 01062
               </p>
-              <p className="flex justify-center lg:justify-start">(413) 586-4696</p>
-              <p className="flex justify-center lg:justify-start">Info@macommclean.com</p>
+              <p className="flex justify-center lg:justify-start">
+                (413) 586-4696
+              </p>
+              <p className="flex justify-center lg:justify-start">
+                Info@macommclean.com
+              </p>
             </div>
           </div>
 
@@ -44,7 +50,9 @@ export default function Footer() {
               <p className="font-bold text-sm flex justify-center lg:justify-start">
                 Sat & Sun
               </p>
-              <p className="text-sm flex justify-center lg:justify-start">Closed</p>
+              <p className="text-sm flex justify-center lg:justify-start">
+                Closed
+              </p>
             </div>
           </div>
 
@@ -66,8 +74,16 @@ export default function Footer() {
                 </p>
               </Link>
               <Link to="/contact">
-                <p className="flex justify-center text-sm lg:justify-start  font-bold hover:text-[#F48700]">
+                <p className="flex justify-center text-sm lg:justify-start  font-bold pb-2 hover:text-[#F48700]">
                   CONTACT
+                </p>
+              </Link>
+              <Link
+                target="_blank"
+                to="https://docs.google.com/document/d/1mx8E8Ij_s_GZz4c3PPofRxEg5XYo3UKZXlaS15iTfms/edit?usp=sharing"
+              >
+                <p className="flex justify-center text-sm lg:justify-start  font-bold hover:text-[#F48700]">
+                  PRIVACY POLICY
                 </p>
               </Link>
             </div>
