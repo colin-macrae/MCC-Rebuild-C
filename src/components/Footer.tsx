@@ -78,10 +78,7 @@ export default function Footer() {
                   CONTACT
                 </p>
               </Link>
-              <Link
-                target="_blank"
-                to="https://docs.google.com/document/d/1mx8E8Ij_s_GZz4c3PPofRxEg5XYo3UKZXlaS15iTfms/edit?usp=sharing"
-              >
+              <Link to="/privacy-policy">
                 <p className="flex justify-center text-sm lg:justify-start  font-bold hover:text-[#F48700]">
                   PRIVACY POLICY
                 </p>

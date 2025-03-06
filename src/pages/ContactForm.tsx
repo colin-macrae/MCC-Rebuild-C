@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";
 
 export default function ContactForm(): JSX.Element {
   type Inputs = {
@@ -124,13 +125,12 @@ export default function ContactForm(): JSX.Element {
             rates may apply. For assistance, reply HELP or contact 413-251-4700.
             To stop receiving messages, reply STOP. No further messages will be
             sent. For details, see our{' '}
-            <a
+            <Link
               className="text-blue-600"
-              target="_blank"
-              href="https://docs.google.com/document/d/1mx8E8Ij_s_GZz4c3PPofRxEg5XYo3UKZXlaS15iTfms/edit?usp=sharing"
+              to="/privacy-policy"
             >
               Privacy Policy
-            </a>
+            </Link>
             .
           </p>
           <button

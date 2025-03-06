@@ -11,6 +11,7 @@ import OfficeCleaning from "./pages/Services-Pages/Office-Cleaning";
 import Footer from "./components/Footer";
 import ServiceAreas from "./pages/ServiceAreas";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/Carpet-Cleaning" element={<CarpetCleaning />} />
           <Route path="/Janitorial-Services" element={<JanitorialServices />} />
           <Route path="/Office-Cleaning" element={<OfficeCleaning />} />
+          <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
