@@ -1,0 +1,10 @@
+.slide-up {
+  opacity: 0; /* Start invisible */
+  transform: translateY(50px); /* Start BELOW */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-up.visible {
+  opacity: 1 !important; /* Make sure it becomes fully visible */
+  transform: translateY(0) !important; /* Ensure it moves UP */
+}

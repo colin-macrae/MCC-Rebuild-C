@@ -6,6 +6,8 @@ import { Link, useNavigate } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "../components/Utils/RevealOnScroll.tsx";
+import '../components/Utils/RevealOnScroll.css';
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -42,7 +44,7 @@ export default function Landing() {
   return (
     <div className="background-image">
       <section className="about-heading-section">
-        <Reveal>
+        <div className="slide-up">
           <div className="about-heading-text">
             <h2>Professional Commercial Cleaning</h2>
             <p>
@@ -52,9 +54,11 @@ export default function Landing() {
               cleaning services, we’re the corporate cleaning company in the New
               England area.
             </p>
-              <button onClick={handleEmailUsClick} className="btn">CONTACT US &rsaquo;</button>
+            <button onClick={handleEmailUsClick} className="btn">
+              CONTACT US &rsaquo;
+            </button>
           </div>
-        </Reveal>
+        </div>
       </section>
       <section className="attribute-icons-section">
         <Reveal>
@@ -99,8 +103,8 @@ export default function Landing() {
                     alt={`Preview ${index + 1}`}
                     className={
                       index === currentImageIndex
-                        ? "active preview-img"
-                        : "preview-img"
+                        ? 'active preview-img'
+                        : 'preview-img'
                     }
                     onClick={() => setCurrentImageIndex(index)}
                   />
@@ -291,36 +295,35 @@ export default function Landing() {
       </section>
       <section className="map-section bg-white">
         <div className="map-scn-container m-auto max-w-[2000px]">
-<div className="find-us">Where To Find Us</div>
-        <Reveal>
-          <MapContainer
-            center={[42.240176, -72.370448]}
-            zoom={9}
-            scrollWheelZoom={false}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[42.113839, -72.083894]}>
-              <Popup>
-                MCC <br />
-                660 Main Street <br />
-                Sturbridge, MA 01566
-              </Popup>
-            </Marker>
-            <Marker position={[42.330088, -72.693499]}>
-              <Popup>
-                MCC <br />
-                140 Pine Street
-                <br />
-                Florence, MA 01062
-              </Popup>
-            </Marker>
-          </MapContainer>
-        </Reveal>
+          <div className="find-us">Where To Find Us</div>
+          <Reveal>
+            <MapContainer
+              center={[42.240176, -72.370448]}
+              zoom={9}
+              scrollWheelZoom={false}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[42.113839, -72.083894]}>
+                <Popup>
+                  MCC <br />
+                  660 Main Street <br />
+                  Sturbridge, MA 01566
+                </Popup>
+              </Marker>
+              <Marker position={[42.330088, -72.693499]}>
+                <Popup>
+                  MCC <br />
+                  140 Pine Street
+                  <br />
+                  Florence, MA 01062
+                </Popup>
+              </Marker>
+            </MapContainer>
+          </Reveal>
         </div>
-        
       </section>
       <GetInTouch />
     </div>
