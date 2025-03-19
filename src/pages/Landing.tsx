@@ -44,7 +44,7 @@ export default function Landing() {
   return (
     <div className="background-image">
       <section className="about-heading-section">
-        <div className="slide-up">
+        <Reveal>
           <div className="about-heading-text">
             <h2>Professional Commercial Cleaning</h2>
             <p>
@@ -58,7 +58,7 @@ export default function Landing() {
               CONTACT US &rsaquo;
             </button>
           </div>
-        </div>
+        </Reveal>
       </section>
       <section className="attribute-icons-section">
         <Reveal>
