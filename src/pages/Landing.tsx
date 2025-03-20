@@ -6,8 +6,6 @@ import { Link, useNavigate } from "react-router-dom";
 import Reveal from "../components/Utils/Reveal";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "../components/Utils/RevealOnScroll.tsx";
-import '../components/Utils/RevealOnScroll.css';
 
 export default function Landing() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

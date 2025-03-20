@@ -12,12 +12,10 @@ import Footer from "./components/Footer";
 import ServiceAreas from "./pages/ServiceAreas";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-// import RevealOnScroll from "./components/Utils/RevealOnScroll";
 
 export default function App() {
   return (
-    <>
-      {/* <RevealOnScroll /> */}
+    <>      
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Landing />} />
