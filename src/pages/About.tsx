@@ -130,17 +130,18 @@ export default function About() {
             </p>
           </div>
         </Reveal>
-        <Reveal>
-          <div className=' m-auto'>
-             <div>
-            <img
-              src="/about-team-1.jpeg"
-              alt="mass comm team posing"
-              className="team-pic-single"
-            />
+        <div>
+          <div className=" m-auto">
+            <Reveal>
+              <img
+                src="/about-team-1.jpeg"
+                alt="mass comm team posing"
+                className="team-pic-single"
+              />
+            </Reveal>
           </div>
           <div className="pics-double-container">
-            <div>
+            <Reveal>
               <img
                 src="/about-team-2.jpeg"
                 alt="mass comm team posing"
@@ -151,13 +152,10 @@ export default function About() {
                 alt="mass comm team posing"
                 className="team-pic-double"
               />
-            </div>
+            </Reveal>
           </div>
-          </div>
-         
-        </Reveal>
+        </div>
       </section>
-
       <GetInTouch />
     </div>
   );
