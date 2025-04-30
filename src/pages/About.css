@@ -1,7 +1,7 @@
 .about-heading-section {
   position: relative;
   background-color: rgba(241, 241, 241, 0.897);
-  height: 35rem;
+  height: 35rem;  
 }
 
 .about-caring-section {
@@ -25,8 +25,10 @@
 }
 
 .about-heading-text {
-  padding: 10% 25% 10% 10%;
+  padding: 9rem 20rem 0 0;
+  margin: 0 auto;
   font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  max-width: 1200px;
 }
 
 .about-heading-text h2 {
