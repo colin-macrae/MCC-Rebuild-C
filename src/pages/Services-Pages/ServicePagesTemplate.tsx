@@ -46,11 +46,11 @@ export default function ServicesPagesTemplate(
           </div>
         </Reveal>
       </section>
-      <section className="section-three">
+      <section className="services-section-three">
         <Reveal>
-          <div className="section-three-container">
-            <h2 className="section-three-heading">{sectionTwoHeading}</h2>
-            <p className="section-three-text">{sectionTwoText}</p>
+          <div className="services-section-three-container">
+            <h2 className="services-section-three-heading">{sectionTwoHeading}</h2>
+            <p className="services-section-three-text">{sectionTwoText}</p>
           </div>
         </Reveal>
       </section>
