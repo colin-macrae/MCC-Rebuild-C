@@ -1,6 +1,6 @@
-import Reveal from "../../components/Utils/Reveal";
-import GetInTouch from "../../components/GetInTouch";
-import "./ServicesPagesTemplate.css";
+import Reveal from '../../components/Utils/Reveal';
+import GetInTouch from '../../components/GetInTouch';
+import './ServicesPagesTemplate.css';
 
 interface ServicesPagesTemplateProps {
   pageHeading: string;
@@ -27,14 +27,16 @@ export default function ServicesPagesTemplate(
 
   return (
     <div>
-      <Reveal>
-        <section className="heading-section">
+      <section className="heading-section">
+        <Reveal>
           <div className="heading-text max-w-[1400px]">
             <h2>{pageHeading}</h2>
             <p>{pageHeadingText}</p>
           </div>
-        </section>
-        <section className="intro">
+        </Reveal>
+      </section>
+      <section className="intro">
+        <Reveal>
           <div className="intro-container">
             <img className="intro-image" src={image} alt="worker working" />
             <div className="intro-copy-container">
@@ -42,14 +44,17 @@ export default function ServicesPagesTemplate(
               <p className="intro-text">{introText}</p>
             </div>
           </div>
-        </section>
-        <section className="section-three">
+        </Reveal>
+      </section>
+      <section className="section-three">
+        <Reveal>
           <div className="section-three-container">
             <h2 className="section-three-heading">{sectionTwoHeading}</h2>
             <p className="section-three-text">{sectionTwoText}</p>
           </div>
-        </section>
-      </Reveal>
+        </Reveal>
+      </section>
+
       <GetInTouch />
     </div>
   );
