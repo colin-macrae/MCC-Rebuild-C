@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="w-full">
       <div className="p-5 pt-10 px-12 bg-[#005067] text-[#ffffff] w-full flex flex-col justify-center lg:flex-row">
-        <div className="lg:w-[1200px] flex flex-col justify-center lg:flex-row">
+        <div className="mb-10 lg:w-[1200px] flex flex-col justify-center lg:flex-row">
           <div className="lg:w-52 w-full flex justify-center lg:block">
             <img src={coloredLogo} />
           </div>
