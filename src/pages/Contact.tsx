@@ -17,9 +17,9 @@ export default function Contact(): JSX.Element {
 
   return (
     <div className="background-image-contact ">
-      <section className="about-heading-section">
+      <section className="contact-heading-section">
         <Reveal>
-          <div className="about-heading-text">
+          <div className="contact-heading-text">
             <h2>Cleaning Done Right</h2>
             <p>
               Experience why we're the preferred corporate cleaning company in
