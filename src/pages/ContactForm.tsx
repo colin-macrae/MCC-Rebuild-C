@@ -108,8 +108,8 @@ export default function ContactForm(): JSX.Element {
           <textarea
             className="w-full min-h-[100px] border-slate-300 p-2"
             id="message"
-            placeholder="Message*"
-            {...register('message', { required: true })}
+            placeholder="Message"
+            {...register('message', { required: false })}
           />
           {errors.message && (
             <span className="required-field">This field is required</span>
